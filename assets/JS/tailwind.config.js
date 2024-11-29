@@ -21,6 +21,9 @@ tailwind.config={
             colors:{
                 'primary_color':'#EFEFEF',
                 'third_color':'#222222'
+            },
+            screens:{
+                '3xl':'2560px'
             }
 
             

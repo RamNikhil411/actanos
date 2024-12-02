@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +30,9 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.17/dist/lenis.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,7 +41,7 @@
 </head>
 
 <body>
-    <header class="lg:px-10 xl:px-12 3xl:px-32 py-4 flex justify-between items-center  font-myriad font-bold">
+    <header class="lg:px-10 xl:px-12 3xl:px-32 py-4 flex justify-between items-center  font-myriad font-bold fixed sticky top-0 bg-white z-[1000]">
         <div>
             <svg class="w-12 h-12 3xl:w-28 3xl:h-28" width="150" height="150" viewBox="0 0 61 61" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +60,7 @@
                             class=" pt-[px] bi bi-chevron-down self-end"></i></a></li>
                 <li><a href="#">Clients</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Kowledge</a></li>
+                <li><a href="#">Knowledge</a></li>
             </ul>
         </nav>
 
@@ -82,13 +86,13 @@
             </div>
             <div class="flex gap-5 pb-20">
                 <button
-                    class=" uppercase text-xs flex items-center bg-black text-[#EFEFEF] text-base gap-4 p-4 rounded-md">
-                    <p class="3xl:text-xl">request a call</p>
+                    class="  text-xs flex items-center bg-black text-[#EFEFEF] text-base gap-4 p-4 rounded-md">
+                    <p class="3xl:text-xl font-dm_sans ">REQUEST A CALL</p>
                     <div class="px-4   border-l  border-[#3A3A3E]"><i
                             class=" text-[#bef941]  bi bi-chevron-double-right"></i></div>
                 </button>
                 <div>
-                    <p class="text-[dm_sans] text-sm text-[#545454] 3xl:text-base">
+                    <p class="font-dm_sans text-sm text-[#545454] 3xl:text-base">
                         We Revolutionize User Experience
                         <br>
                         Using Behavioural Science.
@@ -102,7 +106,7 @@
 
     </section>
 
-    <section class=" h-[50vh] ">
+    <section class=" h-[50vh] mt-20 ">
         <div class="lg:px-10 xl:px-12 3xl:px-32 h-full">
             <div class="  h-full grid grid-cols-2 border-y ">
                 <div class="h-full relative flex justify-center items-center ">
@@ -120,7 +124,7 @@
 
                     </div>
                 </div>
-                <div class="2xl:text-7xl lg:text-5xl 3xl:text-9xl flex justify-center items-center font-bold">
+                <div class="2xl:text-6xl lg:text-5xl 3xl:text-9xl flex justify-center items-center font-semibold font-dm_sans">
                     We specialize in <br>
                     creating human- <br>
                     centric designs.
@@ -132,28 +136,28 @@
 
     </section>
     <section>
-        <div class="w-full h-full lg:px-10 xl:px-12 3xl:px-32 text-third_color ">
-            <div class="w-full h-full py-14 space-y-14">
-                <h1 class="font-bebasNeue uppercase text-5xl 3xl:text-9xl">Our works</h1>
+        <div class="w-full h-full lg:px-10 xl:px-12 3xl:px-32 text-third_color mt-32 ">
+            <div class="w-full h-full  space-y-14">
+                <h1 class="font-bebasNeue uppercase text-7xl 3xl:text-9xl">Our works</h1>
                 <div class="w-full space-y-4">
                     <img src="assets/images/Workiom.webp" alt="" class="w-full">
                     <div class="flex justify-between ">
                         <div class="font-bebasNeue space-y-3">
-                            <h3 class="text-3xl 3xl:text-7xl">WORKIOM</h3>
+                            <h3 class="text-4xl 3xl:text-7xl">WORKIOM</h3>
                             <div class="text-xs 3xl:text-xl flex gap-3 font-inter ">
-                                <button class=" border border-black px-4 py-2 rounded-full uppercase ">Business
+                                <button class=" border border-black px-4 py-2 rounded-full uppercase text-[10px] 3xl:text-base font-semibold">Business
                                     Management</button>
-                                <button class=" border border-black px-4 py-2 rounded-full uppercase  ">SAAS</button>
-                                <button class=" border border-black px-4 py-2 rounded-full uppercase">Cloud
+                                <button class=" border border-black px-4 py-2 rounded-full uppercase text-[10px] 3xl:text-base font-semibold">SAAS</button>
+                                <button class=" border border-black px-4 py-2 rounded-full uppercase text-[10px] 3xl:text-base font-semibold">Cloud
                                     Platform</button>
                             </div>
 
                         </div>
 
                         <div class="font-bebasNeue space-y-3 pr-10">
-                            <h3 class="text-3xl 3xl:text-7xl">Ux/ui redesign</h3>
+                            <h3 class="text-4xl 3xl:text-7xl">Ux/ui redesign</h3>
                             <div>
-                                <p class="font-inter text-xs 3xl:text-xl leading-5 ">
+                                <p class="font-barlow text-xs 3xl:text-xl  ">
                                     We done a redesign of the
                                     <br>
                                     product, applying robust UX
@@ -166,26 +170,26 @@
                 </div>
                 <div>
                     <div class="grid grid-cols-2 gap-10">
-                        <div class="space-y-3">
+                        <div class="space-y-4">
                             <img src="assets/images/Ted's Health.webp" alt="" class="w-full">
                             <div class="flex justify-between items-center">
                                 <div class="space-y-2">
-                                    <h3 class="font-bebasNeue text-3xl 3xl:text-7xl">Ted's health</h3>
+                                    <h3 class="font-bebasNeue text-4xl 3xl:text-7xl">Ted's health</h3>
                                     <div class="text-xs 3xl:text-xl flex gap-1 lg:flex-wrap  font-inter">
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">health
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full text-[10px] 3xl:text-base font-semibold uppercase">health
                                             tech</button>
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">d2c</button>
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full text-[10px] 3xl:text-base font-semibold uppercase">d2c</button>
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">web
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full text-[10px] 3xl:text-base font-semibold uppercase">web
                                             app</button>
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">redesign</button>
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase text-[10px] 3xl:text-base font-semibold">redesign</button>
                                     </div>
                                 </div>
                                 <div class="flex items-center 2xl:gap-4 lg:gap-2 pr-10 ">
-                                    <div class="text-7xl  font-bebasNeue ">X4</div>
+                                    <div class="text-5xl  font-bebasNeue ">X4</div>
                                     <p class="text-xs 3xl:text-xl ">
                                         purchases rate in <br>
                                         first 2 months after <br>
@@ -195,27 +199,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="space-y-3">
+                        <div class="space-y-4">
                             <img src="assets/images/Telegram.webp" alt="" class="w-full">
                             <div class="flex justify-between items-center">
                                 <div class="space-y-2">
-                                    <h3 class="font-bebasNeue text-3xl 3xl:text-7xl">telegram</h3>
+                                    <h3 class="font-bebasNeue text-4xl 3xl:text-7xl">telegram</h3>
                                     <div class="text-xs 3xl:text-xl 3xl:gap-3 font-inter flex gap-1 lg:flex-wrap">
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">voice
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 text-[10px] 3xl:text-base font-semibold rounded-full uppercase">voice
                                             chats</button>
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">video
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 text-[10px] 3xl:text-base font-semibold rounded-full uppercase">video
                                             calls</button>
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">Android</button>
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 text-[10px] 3xl:text-base font-semibold rounded-full uppercase">Android</button>
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">red</button>
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 text-[10px] 3xl:text-base font-semibold rounded-full uppercase">redesign</button>
                                     </div>
                                 </div>
                                 <div class="flex items-center 2xl:gap-4 lg:gap-2 2xl:pr-10 lg:pr-2 ">
                                     <div class="text-5xl font-bebasNeue "><img src="assets/images/cup.png" alt=""
-                                            class="h-16 w-16 3xl:h-20 3xl:w-20 "></div>
+                                            class="h-14 w-14 3xl:h-20 3xl:w-20 "></div>
                                     <p class="text-xs 3xl:text-xl">
                                         The winner of the <br>
                                         Telegram Redesign <br>
@@ -230,27 +234,27 @@
                 </div>
                 <div>
                     <div class="grid grid-cols-2 gap-10">
-                        <div class="space-y-3">
+                        <div class="space-y-4">
                             <img src="assets/images/Travelino.webp" alt="" class="w-full">
                             <div class="flex justify-between items-center">
                                 <div class="space-y-2">
-                                    <h3 class="font-bebasNeue text-3xl 3xl:text-7xl">travelno</h3>
+                                    <h3 class="font-bebasNeue text-4xl 3xl:text-7xl">travelno</h3>
                                     <div class="text-xs 3xl:text-xl font-inter flex gap-1 lg:flex-wrap">
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">Travel
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 text-[10px] 3xl:text-base font-semibold rounded-full uppercase">Travel
                                             and
                                             leisure</button>
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">b2c</button>
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full text-[10px] 3xl:text-base font-semibold uppercase">b2c</button>
                                         <button
-                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full uppercase">web
+                                            class="border border-black 2xl:px-4 2xl:py-2 lg:px-3 lg:py-1 rounded-full text-[10px] 3xl:text-base font-semibold uppercase">web
                                             app</button>
 
                                     </div>
                                 </div>
                                 <div class="flex items-center 2xl:gap-4 lg:gap-2 2xl:pr-10 lg:pr-2">
                                     <div class="">
-                                        <img src="assets/images/UI.png" alt="" class="w-10 3xl:w-16 ">
+                                        <img src="assets/images/UI.png" alt="" class="w-12 3xl:w-16 ">
                                     </div>
                                     <p class="text-xs 3xl:text-xl">
                                         Featured in UI <br>
@@ -264,7 +268,7 @@
                         <div class="flex justify-center items-center">
                             <div class="relative flex justify-center items-center">
                                 <div>
-                                    <svg class="w-64 h-16" width="606" height="176" viewBox="0 0 303 88" fill="none"
+                                    <svg class="w-64 h-16 3xl:w-96 3xl:h-28" width="606" height="176" viewBox="0 0 303 88" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M27.8844 5.92096C32.7037 3.92266 37.9873 2.82031 43.5254 2.82031H97.4398V5.09035H43.5254C38.2908 5.09035 33.3024 6.13186 28.7538 8.01788L27.8844 5.92096ZM205.268 2.82031H259.183C264.721 2.82031 270.004 3.92267 274.824 5.921L273.954 8.01792C269.406 6.13188 264.417 5.09035 259.183 5.09035H205.268V2.82031ZM2.66406 43.6791C2.66406 38.1409 3.76662 32.8574 5.76528 28.0381L7.86215 28.9077C5.9758 33.4562 4.9341 38.4446 4.9341 43.6791C4.9341 48.9137 5.9758 53.9021 7.86214 58.4505L5.76527 59.3202C3.76661 54.5009 2.66406 49.2173 2.66406 43.6791ZM296.943 28.0382C298.941 32.8574 300.044 38.141 300.044 43.6791C300.044 49.2173 298.941 54.5008 296.943 59.3201L294.846 58.4505C296.732 53.902 297.774 48.9137 297.774 43.6791C297.774 38.4446 296.732 33.4562 294.846 28.9078L296.943 28.0382ZM274.824 81.4373C270.004 83.4357 264.721 84.538 259.183 84.538H205.268V82.268H259.183C264.417 82.268 269.406 81.2265 273.954 79.3404L274.824 81.4373ZM43.5254 84.538C37.9872 84.538 32.7037 83.4357 27.8843 81.4374L28.7538 79.3405C33.3024 81.2265 38.2908 82.268 43.5254 82.268H97.4398V84.538H43.5254Z"
@@ -287,7 +291,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="mt-44">
         <div class="px-10 xl:px-12 3xl:px-32">
             <div class="flex justify-between items-center py-6 border-b">
                 <h1 class="font-bebasNeue text-7xl 3xl:text-9xl">We strive to innovate</h1>
@@ -298,8 +302,8 @@
                     </button>
                 </div>
             </div>
-            <div class="grid grid-cols-2 mt-4">
-                <div class="space-y-8">
+            <div class="grid grid-cols-2 gap-20 mt-4">
+                <div class="space-y-8 ">
                     <div class="font-dm_sans text-[#57575A] 3xl:text-2xl">
                         Solid Strategy aligned with business needs and robust <br>
                         data analysis are fundamental ingredients to extract <br>
@@ -308,10 +312,10 @@
                     <div class="space-y-4">
                         <h3 class="capitalize font-semibold text-[#F982FC] 3xl:text-2xl">some number about us</h3>
                         <div class="grid grid-cols-2  grid-rows-2 gap-3">
-                            <div class=" grid grid-cols-2 bg-[#F2F0F0] rounded-3xl">
-                                <div class="p-4">
-                                    <h1 class="text-5xl 3xl:text-7xl font-bebasNeue">300+</h1>
-                                    <p class="font-inter 3xl:text-2xl">We have successfully
+                            <div class=" grid grid-cols-[52%_48%] bg-[#F2F0F0] rounded-3xl">
+                                <div class="p-4 space-y-3">
+                                    <h1 class="text-5xl 3xl:text-7xl font-bebasNeue">+300</h1>
+                                    <p class="font-dm_sans text-[#57575A] 3xl:text-xl text-xs">We have successfully
                                         completed a total of
                                         300+ projects</p>
                                 </div>
@@ -320,10 +324,10 @@
                                 </div>
 
                             </div>
-                            <div class="grid grid-cols-2 bg-[#F2F0F0] rounded-3xl">
-                                <div class="p-4">
+                            <div class="grid grid-cols-[52%_48%] bg-[#F2F0F0] rounded-3xl">
+                                <div class="p-4 space-y-3 pb-6">
                                     <h1 class="text-5xl 3xl:text-7xl font-bebasNeue">100K</h1>
-                                    <p class="font-inter 3xl:text-2xl">We’ve gathered dozens
+                                    <p class="font-dm_sans text-[#57575A] 3xl:text-xl text-xs">We’ve gathered dozens
                                         of reviews from the
                                         clients and + 100k
                                         reviews from their users</p>
@@ -332,20 +336,20 @@
 
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 bg-[#F2F0F0] rounded-3xl">
-                                <div class="p-4">
+                            <div class="grid grid-cols-[52%_48%] bg-[#F2F0F0] rounded-3xl">
+                                <div class="p-4 space-y-3">
                                     <h1 class="text-5xl 3xl:text-7xl font-bebasNeue">+10</h1>
-                                    <p class="font-inter 3xl:text-2xl">Years 0f Experience</p>
+                                    <p class="font-dm_sans text-[#57575A] 3xl:text-xl text-xs">Years 0f Experience</p>
 
                                 </div>
                                 <div>
 
                                 </div>
                             </div>
-                            <div class="grid grid-cols-2 bg-[#F2F0F0] rounded-3xl">
-                                <div class="p-4">
+                            <div class="grid grid-cols-[52%_48%] bg-[#F2F0F0] rounded-3xl">
+                                <div class="p-4 pb-6 space-y-3">
                                     <h1 class="text-5xl font-bebasNeue 3xl:text-7xl">+280</h1>
-                                    <p class="font-inter 3xl:text-2xl">Team members all over the world</p>
+                                    <p class="font-dm_sans text-[#57575A] 3xl:text-xl text-xs">Team members all over the world</p>
                                 </div>
                                 <div>
 
@@ -356,93 +360,16 @@
                     </div>
 
                 </div>
-                <div class="flex justify-center items-center">
+                <div class="py-8 justify-center justify-self-end px-7">
                     <div>
-                        <svg class="w-96 3xl:w-[500px]" width="500" height="500" viewBox="0 0 512 512" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.819824" y="0.799805" width="511.18" height="511.18" rx="255.59" fill="#F4F4F4" />
-                            <rect x="64.5254" y="11.7271" width="436.548" height="436.548" rx="218.274"
-                                fill="#EEEEEE" />
-                            <g filter="url(#filter0_d_232_136)">
-                                <rect x="124.133" y="378.853" width="9.81466" height="9.81466" rx="4.90733"
-                                    fill="#1B76FF" />
-                            </g>
-                            <path
-                                d="M141.583 360.627C140.527 360.627 139.605 360.387 138.815 359.907C138.026 359.427 137.413 358.755 136.975 357.891C136.538 357.027 136.319 356.019 136.319 354.867C136.319 353.726 136.543 352.718 136.991 351.843C137.439 350.968 138.074 350.286 138.895 349.795C139.727 349.294 140.709 349.043 141.839 349.043C143.119 349.043 144.186 349.352 145.039 349.971C145.893 350.59 146.447 351.443 146.703 352.531H144.783C144.613 351.934 144.277 351.464 143.775 351.123C143.274 350.782 142.629 350.611 141.839 350.611C140.666 350.611 139.743 350.99 139.071 351.747C138.399 352.504 138.063 353.55 138.063 354.883C138.063 356.216 138.394 357.256 139.055 358.003C139.717 358.75 140.597 359.123 141.695 359.123C142.805 359.123 143.637 358.808 144.191 358.179C144.757 357.55 145.087 356.712 145.183 355.667H142.143V354.355H146.895V360.435H145.343L145.199 358.787C144.826 359.374 144.357 359.827 143.791 360.147C143.226 360.467 142.49 360.627 141.583 360.627ZM148.759 360.435V352.499H150.279L150.423 354.003C150.7 353.48 151.084 353.07 151.575 352.771C152.076 352.462 152.679 352.307 153.383 352.307V354.083H152.919C152.45 354.083 152.028 354.163 151.655 354.323C151.292 354.472 150.999 354.734 150.775 355.107C150.562 355.47 150.455 355.976 150.455 356.627V360.435H148.759ZM158.2 360.627C157.442 360.627 156.76 360.456 156.152 360.115C155.554 359.763 155.08 359.278 154.728 358.659C154.376 358.03 154.2 357.299 154.2 356.467C154.2 355.635 154.376 354.91 154.728 354.291C155.09 353.662 155.576 353.176 156.184 352.835C156.792 352.483 157.469 352.307 158.216 352.307C158.973 352.307 159.65 352.483 160.248 352.835C160.856 353.176 161.336 353.662 161.688 354.291C162.05 354.91 162.232 355.635 162.232 356.467C162.232 357.299 162.05 358.03 161.688 358.659C161.336 359.278 160.856 359.763 160.248 360.115C159.64 360.456 158.957 360.627 158.2 360.627ZM158.2 359.171C158.605 359.171 158.978 359.07 159.32 358.867C159.672 358.664 159.954 358.366 160.168 357.971C160.381 357.566 160.488 357.064 160.488 356.467C160.488 355.87 160.381 355.374 160.168 354.979C159.965 354.574 159.688 354.27 159.336 354.067C158.994 353.864 158.621 353.763 158.216 353.763C157.81 353.763 157.432 353.864 157.08 354.067C156.738 354.27 156.461 354.574 156.248 354.979C156.034 355.374 155.928 355.87 155.928 356.467C155.928 357.064 156.034 357.566 156.248 357.971C156.461 358.366 156.738 358.664 157.08 358.867C157.421 359.07 157.794 359.171 158.2 359.171ZM165.222 360.435L162.886 352.499H164.582L166.118 358.483L167.846 352.499H169.734L171.462 358.483L172.998 352.499H174.694L172.358 360.435H170.614L168.79 354.195L166.966 360.435H165.222ZM179.288 360.435C178.51 360.435 177.891 360.248 177.432 359.875C176.974 359.491 176.744 358.814 176.744 357.843V353.923H175.384V352.499H176.744L176.952 350.483H178.44V352.499H180.68V353.923H178.44V357.843C178.44 358.28 178.531 358.584 178.712 358.755C178.904 358.915 179.23 358.995 179.688 358.995H180.6V360.435H179.288ZM182.298 360.435V348.915H183.994V353.779C184.261 353.32 184.629 352.963 185.098 352.707C185.578 352.44 186.106 352.307 186.682 352.307C187.631 352.307 188.378 352.606 188.922 353.203C189.466 353.8 189.738 354.691 189.738 355.875V360.435H188.058V356.051C188.058 354.515 187.445 353.747 186.218 353.747C185.578 353.747 185.045 353.971 184.618 354.419C184.202 354.867 183.994 355.507 183.994 356.339V360.435H182.298Z"
-                                fill="black" />
-                            <rect x="139.836" y="24.6416" width="348.322" height="348.322" rx="174.161"
-                                fill="#E1E1E1" />
-                            <g filter="url(#filter1_d_232_136)">
-                                <rect x="186.521" y="316.464" width="9.81466" height="9.81466" rx="4.90733"
-                                    fill="#1B76FF" />
-                            </g>
-                            <path
-                                d="M199.108 298.046V286.846H200.804V298.046H199.108ZM202.882 298.046V290.11H204.386L204.514 291.502C204.759 291.012 205.116 290.628 205.586 290.35C206.066 290.062 206.615 289.918 207.234 289.918C208.194 289.918 208.946 290.217 209.49 290.814C210.044 291.412 210.322 292.302 210.322 293.486V298.046H208.642V293.662C208.642 292.126 208.012 291.358 206.754 291.358C206.124 291.358 205.602 291.582 205.186 292.03C204.78 292.478 204.578 293.118 204.578 293.95V298.046H202.882ZM215.356 298.238C214.354 298.238 213.527 297.993 212.876 297.502C212.226 297.012 211.852 296.361 211.756 295.55H213.468C213.554 295.913 213.756 296.228 214.076 296.494C214.396 296.75 214.818 296.878 215.34 296.878C215.852 296.878 216.226 296.772 216.46 296.558C216.695 296.345 216.812 296.1 216.812 295.822C216.812 295.417 216.647 295.145 216.316 295.006C215.996 294.857 215.548 294.724 214.972 294.606C214.524 294.51 214.076 294.382 213.628 294.222C213.191 294.062 212.823 293.838 212.524 293.55C212.236 293.252 212.092 292.852 212.092 292.35C212.092 291.657 212.359 291.081 212.892 290.622C213.426 290.153 214.172 289.918 215.132 289.918C216.018 289.918 216.732 290.132 217.276 290.558C217.831 290.985 218.156 291.588 218.252 292.366H216.62C216.567 292.025 216.407 291.758 216.14 291.566C215.884 291.374 215.538 291.278 215.1 291.278C214.674 291.278 214.343 291.369 214.108 291.55C213.874 291.721 213.756 291.945 213.756 292.222C213.756 292.5 213.916 292.718 214.236 292.878C214.567 293.038 214.999 293.182 215.532 293.31C216.066 293.428 216.556 293.566 217.004 293.726C217.463 293.876 217.831 294.1 218.108 294.398C218.386 294.697 218.524 295.134 218.524 295.71C218.535 296.436 218.252 297.038 217.676 297.518C217.111 297.998 216.338 298.238 215.356 298.238ZM221.205 288.606C220.885 288.606 220.618 288.51 220.405 288.318C220.202 288.116 220.101 287.865 220.101 287.566C220.101 287.268 220.202 287.022 220.405 286.83C220.618 286.628 220.885 286.526 221.205 286.526C221.525 286.526 221.786 286.628 221.989 286.83C222.202 287.022 222.309 287.268 222.309 287.566C222.309 287.865 222.202 288.116 221.989 288.318C221.786 288.51 221.525 288.606 221.205 288.606ZM220.357 298.046V290.11H222.053V298.046H220.357ZM227.409 295.614C226.993 295.614 226.609 295.566 226.257 295.47L225.569 296.142C225.686 296.217 225.83 296.281 226.001 296.334C226.172 296.388 226.412 296.436 226.721 296.478C227.03 296.521 227.452 296.564 227.985 296.606C229.041 296.702 229.804 296.958 230.273 297.374C230.742 297.78 230.977 298.324 230.977 299.006C230.977 299.476 230.849 299.918 230.593 300.334C230.348 300.761 229.958 301.102 229.425 301.358C228.902 301.625 228.23 301.758 227.409 301.758C226.3 301.758 225.398 301.545 224.705 301.118C224.022 300.702 223.681 300.068 223.681 299.214C223.681 298.884 223.766 298.553 223.937 298.222C224.118 297.902 224.401 297.598 224.785 297.31C224.561 297.214 224.364 297.113 224.193 297.006C224.033 296.889 223.889 296.772 223.761 296.654V296.27L225.137 294.862C224.518 294.329 224.209 293.63 224.209 292.766C224.209 292.244 224.332 291.769 224.577 291.342C224.833 290.905 225.201 290.558 225.681 290.302C226.161 290.046 226.737 289.918 227.409 289.918C227.857 289.918 228.273 289.982 228.657 290.11H231.617V291.23L230.209 291.31C230.465 291.748 230.593 292.233 230.593 292.766C230.593 293.3 230.465 293.78 230.209 294.206C229.964 294.633 229.601 294.974 229.121 295.23C228.652 295.486 228.081 295.614 227.409 295.614ZM227.409 294.286C227.9 294.286 228.294 294.158 228.593 293.902C228.902 293.636 229.057 293.262 229.057 292.782C229.057 292.292 228.902 291.918 228.593 291.662C228.294 291.406 227.9 291.278 227.409 291.278C226.908 291.278 226.502 291.406 226.193 291.662C225.894 291.918 225.745 292.292 225.745 292.782C225.745 293.262 225.894 293.636 226.193 293.902C226.502 294.158 226.908 294.286 227.409 294.286ZM225.281 299.054C225.281 299.513 225.484 299.854 225.889 300.078C226.294 300.313 226.801 300.43 227.409 300.43C227.996 300.43 228.47 300.302 228.833 300.046C229.196 299.801 229.377 299.47 229.377 299.054C229.377 298.745 229.254 298.478 229.009 298.254C228.764 298.041 228.3 297.908 227.617 297.854C227.105 297.822 226.652 297.774 226.257 297.71C225.884 297.913 225.628 298.132 225.489 298.366C225.35 298.601 225.281 298.83 225.281 299.054ZM232.999 298.046V286.526H234.695V291.39C234.961 290.932 235.329 290.574 235.799 290.318C236.279 290.052 236.807 289.918 237.383 289.918C238.332 289.918 239.079 290.217 239.623 290.814C240.167 291.412 240.439 292.302 240.439 293.486V298.046H238.759V293.662C238.759 292.126 238.145 291.358 236.919 291.358C236.279 291.358 235.745 291.582 235.319 292.03C234.903 292.478 234.695 293.118 234.695 293.95V298.046H232.999ZM245.633 298.046C244.855 298.046 244.236 297.86 243.777 297.486C243.319 297.102 243.089 296.425 243.089 295.454V291.534H241.729V290.11H243.089L243.297 288.094H244.785V290.11H247.025V291.534H244.785V295.454C244.785 295.892 244.876 296.196 245.057 296.366C245.249 296.526 245.575 296.606 246.033 296.606H246.945V298.046H245.633ZM251.811 298.238C250.809 298.238 249.982 297.993 249.331 297.502C248.681 297.012 248.307 296.361 248.211 295.55H249.923C250.009 295.913 250.211 296.228 250.531 296.494C250.851 296.75 251.273 296.878 251.795 296.878C252.307 296.878 252.681 296.772 252.915 296.558C253.15 296.345 253.267 296.1 253.267 295.822C253.267 295.417 253.102 295.145 252.771 295.006C252.451 294.857 252.003 294.724 251.427 294.606C250.979 294.51 250.531 294.382 250.083 294.222C249.646 294.062 249.278 293.838 248.979 293.55C248.691 293.252 248.547 292.852 248.547 292.35C248.547 291.657 248.814 291.081 249.347 290.622C249.881 290.153 250.627 289.918 251.587 289.918C252.473 289.918 253.187 290.132 253.731 290.558C254.286 290.985 254.611 291.588 254.707 292.366H253.075C253.022 292.025 252.862 291.758 252.595 291.566C252.339 291.374 251.993 291.278 251.555 291.278C251.129 291.278 250.798 291.369 250.563 291.55C250.329 291.721 250.211 291.945 250.211 292.222C250.211 292.5 250.371 292.718 250.691 292.878C251.022 293.038 251.454 293.182 251.987 293.31C252.521 293.428 253.011 293.566 253.459 293.726C253.918 293.876 254.286 294.1 254.563 294.398C254.841 294.697 254.979 295.134 254.979 295.71C254.99 296.436 254.707 297.038 254.131 297.518C253.566 297.998 252.793 298.238 251.811 298.238Z"
-                                fill="black" />
-                            <rect x="253.891" y="44.2134" width="214.696" height="214.696" rx="107.348"
-                                fill="#F4F4F4" />
-                            <g filter="url(#filter2_d_232_136)">
-                                <rect x="431.667" y="71.3179" width="9.81466" height="9.81466" rx="4.90733"
-                                    fill="#1B76FF" />
-                            </g>
-                            <path
-                                d="M444.253 52.9009V41.7009H448.173C449.048 41.7009 449.773 41.8502 450.349 42.1489C450.925 42.4369 451.352 42.8369 451.629 43.3489C451.917 43.8502 452.061 44.4209 452.061 45.0609C452.061 45.6689 451.923 46.2289 451.645 46.7409C451.379 47.2422 450.957 47.6422 450.381 47.9409C449.805 48.2395 449.069 48.3889 448.173 48.3889H445.949V52.9009H444.253ZM445.949 46.9969H448.093C448.893 46.9969 449.464 46.8262 449.805 46.4849C450.157 46.1329 450.333 45.6582 450.333 45.0609C450.333 44.4422 450.157 43.9622 449.805 43.6209C449.464 43.2689 448.893 43.0929 448.093 43.0929H445.949V46.9969ZM453.543 52.9009V44.9649H455.063L455.207 46.4689C455.484 45.9462 455.868 45.5355 456.359 45.2369C456.86 44.9275 457.463 44.7729 458.167 44.7729V46.5489H457.703C457.233 46.5489 456.812 46.6289 456.439 46.7889C456.076 46.9382 455.783 47.1995 455.559 47.5729C455.345 47.9355 455.239 48.4422 455.239 49.0929V52.9009H453.543ZM462.983 53.0929C462.226 53.0929 461.543 52.9222 460.935 52.5809C460.338 52.2289 459.863 51.7435 459.511 51.1249C459.159 50.4955 458.983 49.7649 458.983 48.9329C458.983 48.1009 459.159 47.3755 459.511 46.7569C459.874 46.1275 460.359 45.6422 460.967 45.3009C461.575 44.9489 462.253 44.7729 462.999 44.7729C463.757 44.7729 464.434 44.9489 465.031 45.3009C465.639 45.6422 466.119 46.1275 466.471 46.7569C466.834 47.3755 467.015 48.1009 467.015 48.9329C467.015 49.7649 466.834 50.4955 466.471 51.1249C466.119 51.7435 465.639 52.2289 465.031 52.5809C464.423 52.9222 463.741 53.0929 462.983 53.0929ZM462.983 51.6369C463.389 51.6369 463.762 51.5355 464.103 51.3329C464.455 51.1302 464.738 50.8315 464.951 50.4369C465.165 50.0315 465.271 49.5302 465.271 48.9329C465.271 48.3355 465.165 47.8395 464.951 47.4449C464.749 47.0395 464.471 46.7355 464.119 46.5329C463.778 46.3302 463.405 46.2289 462.999 46.2289C462.594 46.2289 462.215 46.3302 461.863 46.5329C461.522 46.7355 461.245 47.0395 461.031 47.4449C460.818 47.8395 460.711 48.3355 460.711 48.9329C460.711 49.5302 460.818 50.0315 461.031 50.4369C461.245 50.8315 461.522 51.1302 461.863 51.3329C462.205 51.5355 462.578 51.6369 462.983 51.6369ZM472.334 53.0929C471.566 53.0929 470.889 52.9115 470.302 52.5489C469.716 52.1862 469.257 51.6902 468.926 51.0609C468.596 50.4315 468.43 49.7169 468.43 48.9169C468.43 48.1169 468.596 47.4075 468.926 46.7889C469.257 46.1595 469.716 45.6689 470.302 45.3169C470.9 44.9542 471.582 44.7729 472.35 44.7729C472.98 44.7729 473.529 44.8955 473.998 45.1409C474.478 45.3862 474.852 45.7329 475.118 46.1809V41.3809H476.814V52.9009H475.294L475.118 51.6689C474.862 52.0422 474.51 52.3729 474.062 52.6609C473.614 52.9489 473.038 53.0929 472.334 53.0929ZM472.638 51.6209C473.364 51.6209 473.956 51.3702 474.414 50.8689C474.884 50.3675 475.118 49.7222 475.118 48.9329C475.118 48.1329 474.884 47.4875 474.414 46.9969C473.956 46.4955 473.364 46.2449 472.638 46.2449C471.913 46.2449 471.316 46.4955 470.846 46.9969C470.377 47.4875 470.142 48.1329 470.142 48.9329C470.142 49.4555 470.249 49.9195 470.462 50.3249C470.676 50.7302 470.969 51.0502 471.342 51.2849C471.726 51.5089 472.158 51.6209 472.638 51.6209ZM481.75 53.0929C480.79 53.0929 480.033 52.7942 479.478 52.1969C478.934 51.5995 478.662 50.7089 478.662 49.5249V44.9649H480.358V49.3489C480.358 50.8849 480.987 51.6529 482.246 51.6529C482.875 51.6529 483.393 51.4289 483.798 50.9809C484.203 50.5329 484.406 49.8929 484.406 49.0609V44.9649H486.102V52.9009H484.598L484.47 51.5089C484.225 51.9995 483.862 52.3889 483.382 52.6769C482.913 52.9542 482.369 53.0929 481.75 53.0929ZM491.889 53.0929C491.11 53.0929 490.411 52.9169 489.793 52.5649C489.185 52.2129 488.705 51.7275 488.353 51.1089C488.011 50.4795 487.841 49.7542 487.841 48.9329C487.841 48.1115 488.011 47.3915 488.353 46.7729C488.705 46.1435 489.185 45.6529 489.793 45.3009C490.411 44.9489 491.11 44.7729 491.889 44.7729C492.87 44.7729 493.691 45.0289 494.353 45.5409C495.025 46.0529 495.457 46.7462 495.649 47.6209H493.873C493.766 47.1835 493.531 46.8422 493.169 46.5969C492.806 46.3515 492.379 46.2289 491.889 46.2289C491.473 46.2289 491.089 46.3355 490.737 46.5489C490.385 46.7515 490.102 47.0555 489.889 47.4609C489.675 47.8555 489.569 48.3462 489.569 48.9329C489.569 49.5195 489.675 50.0155 489.889 50.4209C490.102 50.8155 490.385 51.1195 490.737 51.3329C491.089 51.5462 491.473 51.6529 491.889 51.6529C492.379 51.6529 492.806 51.5302 493.169 51.2849C493.531 51.0395 493.766 50.6929 493.873 50.2449H495.649C495.467 51.0982 495.041 51.7862 494.369 52.3089C493.697 52.8315 492.87 53.0929 491.889 53.0929ZM500.529 52.9009C499.75 52.9009 499.132 52.7142 498.673 52.3409C498.214 51.9569 497.985 51.2795 497.985 50.3089V46.3889H496.625V44.9649H497.985L498.193 42.9489H499.681V44.9649H501.921V46.3889H499.681V50.3089C499.681 50.7462 499.772 51.0502 499.953 51.2209C500.145 51.3809 500.47 51.4609 500.929 51.4609H501.841V52.9009H500.529Z"
-                                fill="black" />
-                            <defs>
-                                <filter id="filter0_d_232_136" x="114.319" y="369.038" width="29.4438" height="29.4438"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                    <feMorphology radius="9.81466" operator="dilate" in="SourceAlpha"
-                                        result="effect1_dropShadow_232_136" />
-                                    <feOffset />
-                                    <feComposite in2="hardAlpha" operator="out" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                                    <feBlend mode="normal" in2="BackgroundImageFix"
-                                        result="effect1_dropShadow_232_136" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_232_136"
-                                        result="shape" />
-                                </filter>
-                                <filter id="filter1_d_232_136" x="176.707" y="306.649" width="29.4438" height="29.4438"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                    <feMorphology radius="9.81466" operator="dilate" in="SourceAlpha"
-                                        result="effect1_dropShadow_232_136" />
-                                    <feOffset />
-                                    <feComposite in2="hardAlpha" operator="out" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                                    <feBlend mode="normal" in2="BackgroundImageFix"
-                                        result="effect1_dropShadow_232_136" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_232_136"
-                                        result="shape" />
-                                </filter>
-                                <filter id="filter2_d_232_136" x="421.852" y="61.5032" width="29.4438" height="29.4438"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                    <feMorphology radius="9.81466" operator="dilate" in="SourceAlpha"
-                                        result="effect1_dropShadow_232_136" />
-                                    <feOffset />
-                                    <feComposite in2="hardAlpha" operator="out" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                                    <feBlend mode="normal" in2="BackgroundImageFix"
-                                        result="effect1_dropShadow_232_136" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_232_136"
-                                        result="shape" />
-                                </filter>
-                            </defs>
-                        </svg>
+                    <img src="assets/images/innovate.png" alt="" class="w-[450px] 3xl:w-[650px]">
                     </div>
 
                 </div>
 
             </div>
         </div>
-        <div class="mt-5">
+        <div class="mt-3">
             <!--original-->
             <div class="flex overflow-hidden">
                 <div class="flex animate-loop-scroll">
@@ -863,7 +790,7 @@
                         </svg>
 
                     </div>
-                    <div class="flex justify-center items-center border w-[14vw] py-10 3xl:py-20">
+                    <div class="flex justify-center items-center border w-[14vw] py-16 3xl:py-20">
                         <!--nutanix-->
                         <svg width="121" height="17" viewBox="0 0 121 17" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -1051,9 +978,9 @@
         </div>
         <div class="px-16 3xl:px-32 mt-32 w-full flex justify-between  ">
             <div class="">
-                <h1 class="2xl:text-7xl xl:text-6xl lg:text-5xl 3xl:text-9xl font-bebasNeue">What Our <br> Client
+                <h1 class=" xl:text-6xl lg:text-5xl 3xl:text-9xl font-bebasNeue">What Our <br> Clients
                     Say</h1>
-                <p class="text-inter 3xl:text-2xl ">We supply clients across the <br>
+                <p class="text-inter 3xl:text-2xl text-[#57575A] ">We supply clients across the <br>
                     entire globe with improved <br>
                     network connections.</p>
                 <div class="flex gap-2 3xl:gap-3 mt-10">
@@ -1065,7 +992,7 @@
             <div class="">
                 <div class="flex">
                     <div>
-                        <svg class="w-5 h-8 3xl:w-8 3xl:h-14" width="29" height="55" viewBox="0 0 29 55" fill="none"
+                        <svg class="w-6 h-10 3xl:w-12 3xl:h-20" width="58" height="110" viewBox="0 0 29 55" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M28.2141 19.5665C28.2141 23.7177 27.4669 27.7028 25.9726 31.5219C24.4783 35.507 22.735 38.7449 20.7426 41.2356C18.9163 43.7263 16.8409 46.0509 14.5165 48.2095C12.1921 50.3681 10.4487 51.8626 9.28649 52.6928C8.12424 53.523 7.29411 54.0211 6.79602 54.1872L0.818891 47.9604L4.0565 44.4735C5.38472 42.813 7.04507 40.1563 9.03744 36.5032C11.3618 32.6842 12.358 29.4463 12.026 26.7895C8.70541 26.2914 5.88281 24.797 3.55841 22.3063C1.39997 19.6495 0.320801 16.5777 0.320801 13.0907C0.320801 9.60374 1.56603 6.61492 4.0565 4.12422C6.71304 1.63353 9.95065 0.388184 13.7693 0.388184C17.9201 0.388184 21.3237 2.13166 23.9803 5.61863C26.8028 9.1056 28.2141 13.7549 28.2141 19.5665Z"
@@ -1074,7 +1001,7 @@
 
                     </div>
                     <div>
-                        <svg class="w-5 h-8 3xl:w-8 3xl:h-14" width="29" height="55" viewBox="0 0 29 55" fill="none"
+                        <svg class="w-6 h-10 3xl:w-12 3xl:h-20" width="58" height="110" viewBox="0 0 29 55" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M28.2141 19.5665C28.2141 23.7177 27.4669 27.7028 25.9726 31.5219C24.4783 35.507 22.735 38.7449 20.7426 41.2356C18.9163 43.7263 16.8409 46.0509 14.5165 48.2095C12.1921 50.3681 10.4487 51.8626 9.28649 52.6928C8.12424 53.523 7.29411 54.0211 6.79602 54.1872L0.818891 47.9604L4.0565 44.4735C5.38472 42.813 7.04507 40.1563 9.03744 36.5032C11.3618 32.6842 12.358 29.4463 12.026 26.7895C8.70541 26.2914 5.88281 24.797 3.55841 22.3063C1.39997 19.6495 0.320801 16.5777 0.320801 13.0907C0.320801 9.60374 1.56603 6.61492 4.0565 4.12422C6.71304 1.63353 9.95065 0.388184 13.7693 0.388184C17.9201 0.388184 21.3237 2.13166 23.9803 5.61863C26.8028 9.1056 28.2141 13.7549 28.2141 19.5665Z"
@@ -1084,8 +1011,8 @@
                     </div>
 
                 </div>
-                <div class=" ml-12 3xl:ml-20 xl:space-y-28 lg:space-y-20 3xl:space-y-52">
-                    <p class="mr-16 font-dm_sans text-2xl font-medium 3xl:text-4xl">Awsmd focuses on the end-user
+                <div class=" ml-14 3xl:ml-28 xl:space-y-20 lg:space-y-20 3xl:space-y-48">
+                    <p class="mr-16 font-dm_sans text-3xl font-medium 3xl:text-5xl">Awsmd focuses on the end-user
                         and helps
                         improve <br> retention. They excel in user experience and big-picture <br> thinking.</p>
                     <div class="flex justify-between items-center border-t py-4">
@@ -1098,8 +1025,8 @@
                             </div>
                         </div>
                         <div class="space-x-4">
-                            <span class="text-[#CCCCCC] 3xl:text-2xl">&#10229;</span>
-                            <span class="3xl:text-2xl">&#10230;</span>
+                            <a href=""><span class="text-[#CCCCCC] 3xl:text-2xl">&#10229;</span></a>
+                            <a href=""><span class="3xl:text-2xl">&#10230;</span></a>
                         </div>
                     </div>
 
@@ -1119,8 +1046,8 @@
                 <h1 class="font-bebasNeue text-4xl text-white 3xl:text-7xl">Latest Cases</h1>
                 <div>
                     <button
-                        class="font-inter text-black bg-white font-myriad font-thin py-2 px-4 rounded-full text-xs 3xl:text-xl 3xl:tracking-widest">
-                        Become a client <i class="text-[#BEF941] bi bi-arrow-right"></i>
+                        class="font-inter text-black bg-white font-medium py-2 px-4 rounded-full text-xs 3xl:text-xl 3xl:tracking-widest">
+                        Become a client <i class="text-[#BEF941]  bi bi-arrow-right"></i>
                     </button>
                 </div>
 
@@ -1284,7 +1211,7 @@
     </section>
     <section class="bg-[url('assets/images/Actanos_bg.webp')] bg-cover lg:bg-contain bg-center  bg-no-repeat">
         <div class=" relative">
-            <div class="flex flex-col justify-center items-center gap-4 3xl:gap-8 pt-16 pb-96 ">
+            <div class="flex flex-col justify-center items-center gap-4 3xl:gap-8 pt-14 pb-96 ">
                 <h1 class="font-dm_sans xl:text-7xl 3xl:text-9xl lg:text-5xl text-center font-medium">Have a
                     Project? <br>Lets Work Together
                 </h1>
@@ -1293,8 +1220,8 @@
                     anything else. <br>I'm here to evaluate your business</p>
                 <div>
                     <button
-                        class="font-myriad font-thin text-white bg-black py-2 px-4 3xl:py-6 3xl:px-12 3xl:text-2xl 3xl:tracking-widest rounded-full text-xs">
-                        Become a client <i class="text-[#BEF941] bi bi-arrow-right"></i>
+                    class="font-myriad py-2 px-7 bg-black text-white font-thin lg:text-xs 3xl:text-xl 3xl:tracking-widest 3xl:py-3 3xl:px-6 before:content-['\002B'] rounded-full flex justify-center items-center gap-1.5">
+                        Become a client 
                     </button>
                 </div>
             </div>
@@ -1344,7 +1271,7 @@
                         </div>
                     </div>
                     <div class="space-y-2">
-                        <div class="phone flex gap-4">
+                        <div class="phone flex gap-4 cursor-pointer">
                             <div>
                                 <svg class="w-4 h-4 3xl:h-8 3xl:w-8" width="100" height="100" viewBox="0 0 16 16"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1358,7 +1285,7 @@
                             </div>
 
                         </div>
-                        <div class="Mail flex gap-4">
+                        <div class="Mail flex gap-4 cursor-pointer">
                             <div>
                                 <svg class="w-[18px] h-[14px] 3xl:w-[38px] 3xl:h-[34px]" width="90" height="70"
                                     viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1371,12 +1298,12 @@
                                 </svg>
 
                             </div>
-                            <div class="font-dm_sans text-xs 3xl:text-2xl text-[#333333]">
+                            <div class="font-dm_sans text-xs 3xl:text-2xl text-[#333333] ">
                                 support@actonos.com
                             </div>
 
                         </div>
-                        <div class="address flex gap-4">
+                        <div class="address flex gap-4 cursor-pointer">
                             <div>
                                 <svg class="w-[14px] h-[18px] 3xl:w-[34px] 3xl:h-[38px]" width="70" height="90"
                                     viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1402,47 +1329,47 @@
             <div class="grow-1 w-full ">
                 <div class="flex justify-evenly w-full mt-2 3xl:mt-6 ">
                     <div class="space-y-1">
-                        <h3 class="font-bebasNeue 3xl:text-4xl">
+                        <a href=""><h3 class="font-bebasNeue 3xl:text-4xl">
                             SERVICES
-                        </h3>
+                        </h3></a>
                         <ul class="text-xs  3xl:text-2xl font-Satoshi space-y-1">
-                            <li>Design</li>
-                            <li>Technology</li>
-                            <li>Neuromarketing</li>
-                            <li>Digital Marketing</li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="">Technology</a></li>
+                            <li><a href="">Neuromarketing</a></li>
+                            <li><a href="">Digital Marketing</a></li>
                         </ul>
                     </div>
                     <div class="space-y-1">
-                        <h3 class="font-bebasNeue 3xl:text-4xl">
+                       <a href=""><h3 class="font-bebasNeue 3xl:text-4xl">
                             ABOUT
-                        </h3>
+                        </h3></a>
                         <ul class="text-xs 3xl:text-2xl font-Satoshi space-y-1 ">
-                            <li>About Us </li>
-                            <li>Team</li>
-                            <li>Career</li>
+                            <li><a href="">About Us</a> </li>
+                            <li><a href="">Team</a></li>
+                            <li><a href="">Career</a></li>
 
                         </ul>
                     </div>
                     <div class="space-y-1">
-                        <h3 class="font-bebasNeue 3xl:text-4xl">
+                        <a href=""><h3 class="font-bebasNeue 3xl:text-4xl">
                             quick links
-                        </h3>
+                        </h3></a>
                         <ul class="text-xs font-Satoshi space-y-1 3xl:text-2xl">
-                            <li>Work</li>
-                            <li>Client</li>
-                            <li>Blog</li>
-                            <li>Reach Us</li>
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Client</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Reach Us</a></li>
                         </ul>
                     </div>
                     <div class="space-y-1">
-                        <h3 class="font-bebasNeue 3xl:text-4xl">
+                        <a href=""><h3 class="font-bebasNeue 3xl:text-4xl">
                             quick links
-                        </h3>
+                        </h3></a>
                         <ul class="text-xs font-Satoshi space-y-1 3xl:text-2xl">
-                            <li>Privacy Policy</li>
-                            <li>Terms of Use</li>
-                            <li>Site Map</li>
-                            <li>Refund Policy</li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms of Use</a></li>
+                            <li><a href="">Site Map</a></li>
+                            <li><a href="">Refund Policy</a></li>
                         </ul>
                     </div>
                     <div class="space-y-1">
@@ -1450,7 +1377,7 @@
                         <div class="flex gap-4">
                             <div>
                                 <!--facebook logo-->
-                                <svg class="h-[22px] w-[11px] 3xl:h-[42px] 3xl:w-[31px]" width="100" height="200"
+                                <svg class="h-[22px] w-[11px] 3xl:h-[42px] 3xl:w-[31px] cursor-pointer" width="100" height="200"
                                     viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M9.06207 3.59728H10.9945V0.231577C10.6611 0.185713 9.51454 0.0825195 8.17919 0.0825195C5.39296 0.0825195 3.48431 1.83505 3.48431 5.05611V8.0205H0.409668V11.7831H3.48431V21.2505H7.25397V11.784H10.2043L10.6726 8.02139H7.25309V5.42919C7.25397 4.34169 7.5468 3.59728 9.06207 3.59728Z"
@@ -1459,7 +1386,7 @@
                             </div>
                             <div>
                                 <!--twitter logo-->
-                                <svg class="w-[27px] h-[22px] 3xl:w-[57px] 3xl:h-[52px]" width="81" height="66"
+                                <svg class="w-[27px] h-[22px] 3xl:w-[57px] 3xl:h-[52px] cursor-pointer" width="81" height="66"
                                     viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M26.0687 2.58222C25.0991 3.00755 24.0659 3.28948 22.9887 3.42637C24.0969 2.76474 24.9426 1.72503 25.3403 0.471848C24.3071 1.08785 23.1663 1.52296 21.9506 1.76577C20.9696 0.721182 19.5714 0.0742188 18.046 0.0742188C15.0866 0.0742188 12.7041 2.47629 12.7041 5.42103C12.7041 5.84474 12.74 6.25214 12.828 6.64C8.38396 6.42326 4.45167 4.29333 1.81004 1.04874C1.34885 1.84889 1.07833 2.76474 1.07833 3.75066C1.07833 5.60192 2.03167 7.24296 3.4527 8.19303C2.59389 8.17674 1.75137 7.9274 1.03759 7.53466C1.03759 7.55096 1.03759 7.57214 1.03759 7.59333C1.03759 10.191 2.89048 12.3486 5.32026 12.8456C4.88515 12.9646 4.41093 13.0216 3.91878 13.0216C3.57656 13.0216 3.23107 13.0021 2.90678 12.9304C3.59937 15.0473 5.5647 16.6036 7.90159 16.6541C6.08293 18.0767 3.77374 18.9339 1.27389 18.9339C0.835518 18.9339 0.415073 18.9144 -0.00537109 18.8606C2.36248 20.3876 5.1687 21.2594 8.19493 21.2594C18.0314 21.2594 23.4091 13.1113 23.4091 6.04844C23.4091 5.81214 23.401 5.584 23.3896 5.35748C24.4505 4.60459 25.3419 3.66429 26.0687 2.58222Z"
@@ -1468,7 +1395,7 @@
                             </div>
                             <div>
                                 <!--Instagram logo-->
-                                <svg class="w-[22px] h-[22px] 3xl:w-[52px] 3xl:h-[52px]" width="100" height="100"
+                                <svg class="w-[22px] h-[22px] 3xl:w-[52px] 3xl:h-[52px] cursor-pointer" width="100" height="100"
                                     viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M6.73503 0H14.735C18.4164 0 21.4017 2.98533 21.4017 6.66667V14.6667C21.4017 18.348 18.4164 21.3333 14.735 21.3333H6.73503C3.05369 21.3333 0.0683594 18.348 0.0683594 14.6667V6.66667C0.0683594 2.98533 3.05369 0 6.73503 0ZM14.735 19.3333C17.3083 19.3333 19.4017 17.24 19.4017 14.6667V6.66667C19.4017 4.09334 17.3083 2.00001 14.735 2.00001H6.73501C4.16167 2.00001 2.06834 4.09334 2.06834 6.66667V14.6667C2.06834 17.24 4.16167 19.3333 6.73501 19.3333H14.735Z"

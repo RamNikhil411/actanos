@@ -6,7 +6,8 @@ tailwind.config={
             'inter':['Inter'],
             'dm_sans':['DM Sans'],
             'dark_grotesque':['Darker Grotesque'],
-            'Satoshi':['Satoshi']
+            'Satoshi':['Satoshi'],
+            'barlow':['Barlow']
         },
         extend:{
             animation:{

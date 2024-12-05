@@ -11,7 +11,7 @@ tailwind.config={
         },
         extend:{
             animation:{
-                'loop-scroll':'loop-scroll 50s linear infinite',
+                'loop-scroll':'loop-scroll 25s linear infinite',
             },
             keyframes:{
                 'loop-scroll':{
@@ -20,8 +20,14 @@ tailwind.config={
                 }
             },
             colors:{
-                'primary_color':'#EFEFEF',
-                'third_color':'#222222'
+                '1-color':'#EFEFEF',
+                 '2-color':'#545454',
+                 '3-color':'#F982FC',
+                '4-color':'#222222',
+                '5-color':'#57575A',
+                '6-color':'#F2F0F0',
+                '7-color':'#7F7F7F',
+                '8-color':'#333333'
             },
             screens:{
                 '3xl':'2560px'

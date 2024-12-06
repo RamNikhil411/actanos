@@ -1,8 +1,8 @@
-var swiper=new Swiper(".myClient",{
-    spaceBetween:30,
+var swiper =new Swiper(".mySwiper",{
     navigation:{
-        
-    }
+        nextEl:".next-button",
+        prevEl:".prev-button"
+    },
 })
 
   var swiper = new Swiper(".LatestCases",{
@@ -15,7 +15,7 @@ var swiper=new Swiper(".myClient",{
     },
     navigation:{
         nextEl:".next-button",
-        prevE1:".prev-button"
+        prevEl:".prev-button"
     },
     pagination: {
         el: ".index",

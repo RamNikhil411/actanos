@@ -27,7 +27,8 @@ tailwind.config={
                 '5-color':'#57575A',
                 '6-color':'#F2F0F0',
                 '7-color':'#7F7F7F',
-                '8-color':'#333333'
+                '8-color':'#333333',
+                '9-color':'#0674B7'
             },
             screens:{
                 '3xl':'2560px'

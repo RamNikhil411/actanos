@@ -37,12 +37,12 @@ var swiper =new Swiper(".mySwiper",{
     }
   })
 ///mobile
-  var swiper = new Swiper(".cardMobile", {
+  var swiper = new Swiper(".myCards", {
     effect: "cards",
     grabCursor: true,
-    slideShadows:true,
+    
     pagination:{
-        el:".index",
+        el:".swiper-pagination",
         clickable:'true'
     }
   });

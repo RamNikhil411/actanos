@@ -34,4 +34,7 @@
     width: 10px;
     border-radius:0px;
 }
+.LatestCases .swiper-slide{
+    height: 100%;
+}
 

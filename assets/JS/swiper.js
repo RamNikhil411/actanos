@@ -3,12 +3,13 @@ var swiper =new Swiper(".mySwiper",{
         nextEl:".next-button",
         prevEl:".prev-button"
     },
+    
 })
 
   var swiper = new Swiper(".LatestCases",{
     slidesPerView: 1,
     spaceBetween: 10,
-    loop:true,
+    
     autoplay:{
         delay:3000,
         disableOnInteraction:false
@@ -35,3 +36,13 @@ var swiper =new Swiper(".mySwiper",{
         }
     }
   })
+///mobile
+  var swiper = new Swiper(".cardMobile", {
+    effect: "cards",
+    grabCursor: true,
+    slideShadows:true,
+    pagination:{
+        el:".index",
+        clickable:'true'
+    }
+  });

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figlinks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/JS/tailwind.config.js"></script>
+    <link rel="shortcut icon" href="../assets/images/ActanosFavicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="../assets/styles/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+</head>
+
+<body class="lg:overflow-hidden">
+
+    <header class="fixed top-0 w-full bg-white z-[1000]">
+        <div
+            class="px-3 md:px-8 lg:px-10 xl:px-12 3xl:px-24 py-4 space-y-14 lg:flex justify-between w-full lg:items-center    lg:space-y-0">
+            <div class="flex justify-between items-center relative z-[1000] lg:block ">
+                <div class="">
+                    <svg class="h-10 w-40 xl:w-52 3xl:w-72 3xl:h-32" width="640" height="168" viewBox="0 0 320 56"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_824_11)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M37.0214 28.4827C43.9062 28.4827 49.4875 22.9014 49.4875 16.0167C49.4875 9.13186 43.9062 3.55063 37.0214 3.55063C30.1366 3.55063 24.5554 9.13186 24.5554 16.0167C24.5554 17.2411 24.7319 18.4242 25.0609 19.5421L33.8781 16.3359L38.274 14.7374L37.3308 19.3188L35.4639 28.3863C35.9742 28.4499 36.494 28.4827 37.0214 28.4827ZM32.9183 27.7916L34.1524 21.7975L34.7712 18.7918L31.8872 19.8405L26.0604 21.9594C27.5303 24.6648 29.9726 26.7653 32.9183 27.7916Z"
+                                fill="#FF0000" />
+                            <path d="M34.7711 18.7918L0.635254 31.2048L18.7398 37.9061L27.5302 53.9621L34.7711 18.7918Z"
+                                fill="#0674B7" />
+                            <path
+                                d="M67.9914 48.2538H62.8253L78.1515 8.07258H84.0639L99.3328 48.2538H93.9944L89.7467 37.4049H72.2392L67.9914 48.2538ZM80.9642 13.5257L73.7316 32.8701H88.2542L80.9642 13.5257ZM119.419 48.5982C107.882 48.5982 100.649 40.4472 100.649 28.1632C100.649 15.994 108.169 7.72817 119.821 7.72817C128.718 7.72817 135.205 12.8943 136.697 21.2176H131.416C129.866 15.6496 125.619 12.3203 119.592 12.3203C111.154 12.3203 105.758 18.8641 105.758 28.1632C105.758 37.4049 110.924 44.0061 119.362 44.0061C125.561 44.0061 129.866 40.7342 131.359 35.1088H136.64C135.147 43.4321 128.489 48.5982 119.419 48.5982ZM137.561 12.6647V8.07258H168.615V12.6647H155.585V48.2538H150.591V12.6647H137.561ZM170.126 48.2538H164.96L180.286 8.07258H186.199L201.468 48.2538H196.129L191.881 37.4049H174.374L170.126 48.2538ZM183.099 13.5257L175.866 32.8701H190.389L183.099 13.5257ZM210.893 48.2538H206.014V8.07258H210.606L232.189 39.0695V8.07258H237.068V48.2538H232.476L210.893 17.2569V48.2538ZM281.713 28.1632C281.713 39.988 273.849 48.5982 262.541 48.5982C251.233 48.5982 243.369 39.988 243.369 28.1632C243.369 16.3384 251.233 7.72817 262.541 7.72817C273.849 7.72817 281.713 16.3384 281.713 28.1632ZM248.477 28.1632C248.477 37.4049 254.16 44.0061 262.541 44.0061C270.921 44.0061 276.604 37.4049 276.604 28.1632C276.604 18.9215 270.921 12.3203 262.541 12.3203C254.16 12.3203 248.477 18.9215 248.477 28.1632ZM286.417 35.1088H291.583C291.985 40.5046 296.176 44.0635 302.318 44.0635C307.713 44.0635 311.559 41.5952 311.559 37.2327C311.559 32.2387 306.623 31.2055 300.538 30.1723C294.052 29.0816 287.393 26.9578 287.393 19.1511C287.393 12.3203 292.961 7.72817 301.112 7.72817C310.067 7.72817 315.577 12.7221 316.037 19.9547H310.87C310.296 15.3052 306.565 12.2629 301.112 12.2629C295.889 12.2629 292.387 14.559 292.387 18.8641C292.387 23.6859 297.266 24.6617 303.293 25.6949C309.837 26.7856 316.553 28.9668 316.553 36.7735C316.553 43.7191 310.698 48.5982 302.26 48.5982C292.444 48.5982 286.704 43.0303 286.417 35.1088Z"
+                                fill="#151515" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_824_11">
+                                <rect width="319.614" height="56" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="lg:hidden">
+                    <button class="menu">
+                        <svg class="" width="45" height="22" viewBox="0 0 45 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7H37.362C37.9049 7 38.4244 6.77931 38.8014 6.38861L44 1" stroke="black"
+                                stroke-width="2" stroke-linecap="round" />
+                            <path d="M44 15H7.63799C7.09511 15 6.57555 15.2207 6.19863 15.6114L1 21" stroke="black"
+                                stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <svg class="hidden" width="27" height="28" viewBox="0 0 27 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.5433 25.1431C26.6681 25.2679 26.7671 25.4161 26.8347 25.5793C26.9023 25.7424 26.937 25.9172 26.937 26.0938C26.937 26.2703 26.9023 26.4452 26.8347 26.6083C26.7671 26.7714 26.6681 26.9196 26.5433 27.0445C26.4184 27.1693 26.2702 27.2684 26.1071 27.3359C25.9439 27.4035 25.7691 27.4383 25.5925 27.4383C25.416 27.4383 25.2412 27.4035 25.078 27.3359C24.9149 27.2684 24.7667 27.1693 24.6418 27.0445L13.4988 15.8997L2.35575 27.0445C2.10361 27.2966 1.76163 27.4383 1.40504 27.4383C1.04846 27.4383 0.706483 27.2966 0.454341 27.0445C0.202199 26.7923 0.0605469 26.4504 0.0605469 26.0938C0.0605469 25.7372 0.202199 25.3952 0.454341 25.1431L11.5991 14L0.454341 2.85697C0.202199 2.60483 0.0605469 2.26285 0.0605469 1.90626C0.0605469 1.54968 0.202199 1.2077 0.454341 0.955562C0.706483 0.703419 1.04846 0.561768 1.40504 0.561768C1.76163 0.561768 2.10361 0.703419 2.35575 0.955562L13.4988 12.1003L24.6418 0.955562C24.894 0.703419 25.236 0.561768 25.5925 0.561768C25.9491 0.561768 26.2911 0.703419 26.5433 0.955562C26.7954 1.2077 26.937 1.54968 26.937 1.90626C26.937 2.26285 26.7954 2.60483 26.5433 2.85697L15.3985 14L26.5433 25.1431Z"
+                                fill="black" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+            <nav
+                class="navlinks absolute top-0 left-0 px-3 md:px-8 w-full bg-white my-16 hidden lg:static lg:block lg:my-0 lg:w-auto ">
+                <div class="py-10 space-y-8 lg:flex lg:items-center lg:space-y-0  lg:py-0">
+                    <ul
+                        class="text-sm  flex flex-col gap-y-5 lg:flex-row lg:gap-x-8 lg:gap-y-0 lg:bg-black lg:text-white lg:py-2.5 lg:px-7 3xl:py-7 3xl:px-12 rounded-full lg:text-sm 3xl:text-2xl ">
+                        <li class="font-dm_sans"><a href="#">About</a></li>
+                        <li class="font-dm_sans"><a href="#">Services</a></li>
+                        <li class="font-dm_sans"><a href="#">Works</a></li>
+                        <li class="font-dm_sans"><a href="#">Testimonals</a></li>
+                        <li class="font-dm_sans"><a href="#">Case Studies</a></li>
+
+                    </ul>
+                    <button class="text-sm bg-black px-4 py-2 rounded-full text-white lg:hidden">
+                        + Become A Client
+                    </button>
+                </div>
+            </nav>
+            <button class="text-sm bg-black px-4 py-2 rounded-full text-white hidden lg:block">
+                + Become A Client
+            </button>
+        </div>
+    </header>
+    <section class="mt-20 relative">
+        <div class="px-3 md:px-8 lg:px-10 xl:px-12 3xl:px-24 relative">
+           
+            <div class="lg:grid lg:grid-cols-2">
+                <div id="scrollable-section" class="aside lg:max-h-[86vh] lg:overflow-auto  lg:border-r">
+
+                    <div class="space-y-4 px-4 lg:py-8 border-b">
+                        <div><img src="../assets/images/Figlinks/Figlinks-logo.svg" class="w-40 lg:hidden"></div>
+                        <div
+                            class="bg-gradient-to-r from-[#FF6C4A] from-0% via-[#FDB914] via-11.42% to-[#FFA1D8] to-24.09% bg-clip-text  w-fit  ">
+                            <h1 class="font-bebasNeue text-2xl text-transparent  ">Challenges</h1>
+                        </div>
+                        <div>
+                            <ul class="space-y-5">
+                                <li class="flex items-start gap-2">
+                                    <img src="../assets/images/yeruvaka/downfall.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Unnatural Speech-to-Text Experience</h3>
+                                    <p class="text-18-color font-dm_sans">Users could quickly tell they were interacting with a bot.</p></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <img src="../assets/images/yeruvaka/downfall.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Time-Consuming Data Processing</h3>
+                                    <p class="text-18-color font-dm_sans">Long processing times for interview data.</p></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <img src="../assets/images/yeruvaka/downfall.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Limited Flexibility for Premium Clients</h3>
+                                    <p class="text-18-color font-dm_sans">Inability to incorporate client updates.</p></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <img src="../assets/images/yeruvaka/downfall.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">User Intervention Required for Navigation</h3>
+                                    <p class="text-18-color font-dm_sans">Users had to navigate through questions manually.</p></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <img src="../assets/images/yeruvaka/downfall.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Primitive UI/UX</h3>
+                                    <p class="text-18-color font-dm_sans">Basic and outdated user interface and experience.</p></div>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <img src="../assets/images/yeruvaka/downfall.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Limited Analytics Capabilities</h3>
+                                    <p class="text-18-color font-dm_sans">Underutilization of GenAI solutions for analytics.</p></div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="space-y-4 px-4 py-8">
+                        <div
+                            class="bg-gradient-to-r from-[#FF00DD] from-0% via-[#F5CF78] via-8.77% to-[#34A943] to-19.45% bg-clip-text  w-fit  ">
+                            <h1 class="font-bebasNeue text-2xl text-transparent  ">Solutions</h1>
+                        </div>
+                        <div>
+                            <ul class="space-y-5">
+                                <li class="flex items-start gap-2" >
+                                    <img src="../assets/images/yeruvaka/rocket.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Enhance Speech-to-Text Experience</h3>
+                                    <p class="text-18-color font-dm_sans">Integrated Deepgram API for natural interactions.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2" >
+                                    <img src="../assets/images/yeruvaka/rocket.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Optimize Data Processing</h3>
+                                    <p class="text-18-color font-dm_sans">Divided videos into chunks and used Google App Runner and serverless technologies.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2" >
+                                    <img src="../assets/images/yeruvaka/rocket.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Enhance Flexibility for Premium Clients</h3>
+                                    <p class="text-18-color font-dm_sans">Implemented REST API and transitioned to microservice architecture. Applied DRY principles.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2" >
+                                    <img src="../assets/images/yeruvaka/rocket.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Streamline User Navigation </h3>
+                                    <p class="text-18-color font-dm_sans">Detected pauses in responses and improved audio quality.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2" >
+                                    <img src="../assets/images/yeruvaka/rocket.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Enhanced UI/UX</h3>
+                                    <p class="text-18-color font-dm_sans">Designed custom animations, established a color palette, and implemented advanced front-end strategies.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2" >
+                                    <img src="../assets/images/yeruvaka/rocket.svg" alt="">
+                                    <div>
+                                    <h3 class="font-dm_sans font-medium text-lg">Leverage GenAI Solutions</h3>
+                                    <p class="text-18-color font-dm_sans">Replaced the analytics engine with one powered by OpenAI, Gemini, and Olam.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class=" px-6 lg:py-8">
+                    <img src="../assets/images/Figlinks/Figlinks-logo.svg" class="w-48 hidden lg:block">
+                    <div>
+                        <p class="text-8-color font-dm_sans">A leading HRtech SaaS platform in the US and India aimed to make level-one interviews inclusive and fair. We collaborated with this platform to address several key challenges and transform its product development process.</p>
+                    </div>
+                    <div class="space-y-6 mt-5">
+                        <div class="flex gap-2 flex-wrap">
+                            <div class="font-dm_sans  text-xs bg-20-color px-2 py-1 rounded-full text-white">Deepgram API Integration</div>
+                            <div class="font-dm_sans  text-xs bg-21-color px-2 py-1 rounded-full text-white">Google App Runner</div>
+                            <div class="font-dm_sans  text-xs bg-[#45975E] px-2 py-1 rounded-full text-white">Microservice Architecture</div>
+                          
+                            <div class="font-dm_sans  text-xs bg-[#F3ED32] px-2 py-1 rounded-full text-white">GenAI Solutions</div>
+                            <div class="font-dm_sans  text-xs bg-[#FBC833] px-2 py-1 rounded-full text-white">Queue Services
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-col lg:flex-row gap-2">
+                                <div class="bg-6-color p-2  rounded-lg">
+                                    <h1 class="font-bebasNeue text-xl border-b pr-32">
+                                        Industry
+                                    </h1>
+                                    <div class="mt-1 space-y-4">
+                                        <ul class=" ml-4">
+                                            <li class="font-dm_sans text-sm list-disc">HR Technology</li>
+                                            <li class="font-dm_sans text-sm list-disc">Recruitment & <br> Talent Aquisation</li>
+                                        </ul>
+                                        <div class="flex items-center gap-1">
+                                            <div><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.00033 0.666687C7.35215 0.666687 5.74099 1.15543 4.37058 2.07111C3.00017 2.98679 1.93206 4.28827 1.30133 5.81099C0.670603 7.33371 0.505575 9.00927 0.827119 10.6258C1.14866 12.2423 1.94234 13.7271 3.10777 14.8926C4.27321 16.058 5.75807 16.8517 7.37458 17.1732C8.99109 17.4948 10.6666 17.3298 12.1894 16.699C13.7121 16.0683 15.0136 15.0002 15.9292 13.6298C16.8449 12.2594 17.3337 10.6482 17.3337 9.00002C17.3311 6.79066 16.4523 4.67252 14.8901 3.11027C13.3278 1.54801 11.2097 0.669223 9.00033 0.666687ZM11.9609 11.4121L8.62758 9.74544C8.48916 9.67621 8.37276 9.56981 8.29141 9.43815C8.21006 9.30649 8.16698 9.15478 8.167 9.00002V4.83335C8.167 4.61234 8.25479 4.40038 8.41107 4.2441C8.56735 4.08782 8.77932 4.00002 9.00033 4.00002C9.22134 4.00002 9.4333 4.08782 9.58958 4.2441C9.74586 4.40038 9.83366 4.61234 9.83366 4.83335V8.48485L12.7064 9.92119C12.9041 10.02 13.0545 10.1934 13.1244 10.4031C13.1943 10.6128 13.178 10.8417 13.0791 11.0394C12.9803 11.2371 12.8069 11.3874 12.5972 11.4573C12.3875 11.5272 12.1586 11.511 11.9609 11.4121Z"
+                                                        fill="#333333" />
+                                                </svg></div>
+                                            <p class="font-dm_sans text-sm">4 Years</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-6-color p-2 rounded-lg ">
+                                    <h1 class="font-bebasNeue text-xl pb-3 border-b">platform and technologies</h1>
+                                    <div class="flex flex-col">
+                                        <div class="flex py-3 border-b">
+                                            <div class="px-2 border-r"><img
+                                                    src="../assets/images/Figlinks/Node.js_logo 2.svg" alt=""
+                                                    class="w-10"></div>
+                                            <div class="px-2 border-r"><img
+                                                    src="../assets/images/Figlinks/react-2 1.svg" alt=""
+                                                    class="w-10"></div>
+                                            <div class="px-2 border-r"><img
+                                                    src="../assets/images/Figlinks/ai 1.svg" alt="" class="w-10">
+                                            </div>
+                                            <div class="px-2 border-r"><img
+                                                    src="../assets/images/Figlinks/postgresql-ar21 1.svg" alt="" class="w-10">
+                                            </div>
+                                            <div class="px-2 "><img
+                                                    src="../assets/images/Figlinks/tailwindcss-icon 1.svg"
+                                                    alt="" class="w-10"></div>
+                                        </div>
+                                        <div>
+                                            <div class="flex justify-self-center items-center py-3">
+                                                <div class="px-2 border-r"><img
+                                                        src="../assets/images/Figlinks/Frame 1906.svg" alt="" class="w-10">
+                                                </div>
+                                                <div class="px-2 border-r"><img
+                                                        src="../assets/images/Figlinks/cloudflare 2.svg" alt=""
+                                                        class="w-10"></div>
+                                                <div class="px-2 border-r"><img
+                                                        src="../assets/images/Figlinks/Frame 1908.svg" alt=""
+                                                        class="w-10"></div>
+                                                 <div class="px-2 border-r"><img
+                                                            src="../assets/images/Figlinks/Frame 1909.svg" alt=""
+                                                            class="w-10"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
+    <script src="../assets/JS/header.js"></script>
+
+    
+</body>
+
+</html>
+
+

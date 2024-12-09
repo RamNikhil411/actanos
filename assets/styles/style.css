@@ -13,3 +13,25 @@
         border-radius:0px;
     }
 }
+
+.aside::-webkit-scrollbar{
+    display: none;
+}
+
+.swiper-button-disabled{
+    opacity:0.3
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.cardMobile .swiper-pagination-bullet{
+    background-color: black;
+    height: 2px;
+    width: 10px;
+    border-radius:0px;
+}
+

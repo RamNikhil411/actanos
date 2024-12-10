@@ -1,7 +1,7 @@
 gsap.from(".card", {
     x: 0,
     y: 0,
-    duration:2,
+    duration:1,
     position:'absolute',
     rotation:-2
    

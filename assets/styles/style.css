@@ -22,7 +22,7 @@
     opacity:0.3
 }
 
-.myCards .swiper-pagination-bullet{
+.cards .swiper-pagination-bullet{
     background-color: black;
     height: 2px;
     width: 10px;

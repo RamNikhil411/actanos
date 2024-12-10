@@ -40,9 +40,10 @@ var swiper =new Swiper(".mySwiper",{
   var swiper = new Swiper(".myCards", {
     effect: "cards",
     grabCursor: true,
+    slideShadows:false,
     
     pagination:{
-        el:".swiper-pagination",
+        el:".card-index",
         clickable:'true'
     }
   });

@@ -1,28 +1,28 @@
-gsap.to('.card1',{
-    xPercent:-168,
+gsap.from('.card1',{
+    x:0,
     rotation:0,
     duration:2,
     
 }
 )
 
-gsap.to('.card2',{
-    xPercent:-55,
+gsap.from('.card2',{
+    x:0,
     rotation:0,
     duration:2,
     
 }
 )
 
-gsap.to('.card3',{
-    xPercent:55,
+gsap.from('.card3',{
+    x:0,
     rotation:0,
     duration:2,
     
 }
 )
-gsap.to('.card4',{
-    xPercent:170,
+gsap.from('.card4',{
+    x:0,
     rotation:0,
     duration:2,
     

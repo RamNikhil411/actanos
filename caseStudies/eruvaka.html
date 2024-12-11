@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="lg:overflow-hidden">
+<body class="">
 
     <header class="fixed top-0 w-full bg-white z-[1000]">
         <div
@@ -94,7 +94,7 @@
         <div class="px-1 md:px-8 lg:px-10 xl:px-12 3xl:px-24 relative">
            
             <div class="lg:grid lg:grid-cols-2">
-                <div  class=" aside h-auto lg:max-h-[86vh] lg:overflow-auto  lg:border-r">
+                <div  class=" aside h-auto lg:max-h-[127vh] xl:max-h-[86vh] lg:overflow-auto  lg:border-r">
 
                     <div class="space-y-4 3xl:space-y-8 px-4 py-8 border-b">
                         <div><img src="../assets/images/eruvaka/Eruvaka-logo.webp" alt="" class="w-44 lg:hidden"></div>
@@ -278,17 +278,119 @@
                         </div>
                     </div>
 
+                    <div class="flex flex-wrap gap-2 moregallery group mt-10">
+                        <div class="h-[100px] w-[150px] overflow-hidden"><img src="../assets/images/dummy/images (1).jpeg" alt="" class="object-cover"> </div>
+                        <div class="h-[100px] w-[150px] overflow-hidden"><img src="../assets/images/dummy/images (3).jpeg" alt=""></div>
+                        <div class="h-[100px] w-[150px] overflow-hidden"><img src="../assets/images/dummy/images.jpeg" alt=""></div>
+                        <div class="h-[100px] w-[150px] overflow-hidden relative flex items-center justify-center"><img src="../assets/images/dummy/images (1).jpeg" alt="" class="opacity-50"><span class="text-2xl bg-black h-full w-full bg-opacity-40 flex items-center justify-center text-white font-medium  absolute">+3</span></div>
+                        
+                    </div>
+
                 </div>
                
             </div>
         </div>
     </section>
+   <!--- <section class="gallery-section hidden">
+        <div class="fixed h-full top-0 w-full bg-black bg-opacity-50 z-[1001] ">
+            <button class="absolute top-40 lg:top-20 right-0 lg:right-20 close-btn">
+                <svg class="w-[4] h-[17px]" width="54" height="56" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.5433 25.1431C26.6681 25.2679 26.7671 25.4161 26.8347 25.5793C26.9023 25.7424 26.937 25.9172 26.937 26.0938C26.937 26.2703 26.9023 26.4452 26.8347 26.6083C26.7671 26.7714 26.6681 26.9196 26.5433 27.0445C26.4184 27.1693 26.2702 27.2684 26.1071 27.3359C25.9439 27.4035 25.7691 27.4383 25.5925 27.4383C25.416 27.4383 25.2412 27.4035 25.078 27.3359C24.9149 27.2684 24.7667 27.1693 24.6418 27.0445L13.4988 15.8997L2.35575 27.0445C2.10361 27.2966 1.76163 27.4383 1.40504 27.4383C1.04846 27.4383 0.706483 27.2966 0.454341 27.0445C0.202199 26.7923 0.0605469 26.4504 0.0605469 26.0938C0.0605469 25.7372 0.202199 25.3952 0.454341 25.1431L11.5991 14L0.454341 2.85697C0.202199 2.60483 0.0605469 2.26285 0.0605469 1.90626C0.0605469 1.54968 0.202199 1.2077 0.454341 0.955562C0.706483 0.703419 1.04846 0.561768 1.40504 0.561768C1.76163 0.561768 2.10361 0.703419 2.35575 0.955562L13.4988 12.1003L24.6418 0.955562C24.894 0.703419 25.236 0.561768 25.5925 0.561768C25.9491 0.561768 26.2911 0.703419 26.5433 0.955562C26.7954 1.2077 26.937 1.54968 26.937 1.90626C26.937 2.26285 26.7954 2.60483 26.5433 2.85697L15.3985 14L26.5433 25.1431Z" fill="black"/>
+                    </svg>
+                    
+            </button>
+            
+            <div class="flex items-center justify-center pt-[200px] lg:pt-[15vh]" >
+                <div class="w-[90%] lg:w-[60%]  space-y-10">
+                    <div class="swiper gallery">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ">
+                                <img src="../assets/images/dummy/images (1).jpeg" alt="" class="h-[350px] w-full">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/dummy/images (2).jpeg" alt="" class="h-[350px] w-full">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/dummy/images (3).jpeg" alt="" class="h-[350px] w-full">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/dummy/images (1).jpeg" alt="" class="h-[350px] w-full">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/dummy/images (1).jpeg" alt="" class="h-[350px] w-full ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center h-[100px] overflow-hidden gap-10">
+                        <div class="prev">
+                            <svg width="20px" height="20px" viewBox="-5 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    
+                                <title>chevron-left</title>
+                                <desc>Created with Sketch Beta.</desc>
+                                <defs>
+                            
+                            </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                    <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-421.000000, -1195.000000)" fill="#000000">
+                                        <path d="M423.429,1206.98 L434.686,1196.7 C435.079,1196.31 435.079,1195.67 434.686,1195.28 C434.293,1194.89 433.655,1194.89 433.263,1195.28 L421.282,1206.22 C421.073,1206.43 420.983,1206.71 420.998,1206.98 C420.983,1207.26 421.073,1207.54 421.282,1207.75 L433.263,1218.69 C433.655,1219.08 434.293,1219.08 434.686,1218.69 C435.079,1218.29 435.079,1217.66 434.686,1217.27 L423.429,1206.98" id="chevron-left" sketch:type="MSShapeGroup">
+                            
+                            </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    <div thumbslider="" class="swiper thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../assets/images/dummy/images (1).jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/dummy/images (2).jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/dummy/images (3).jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/dummy/images (1).jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/dummy/images (2).jpeg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="next">
+                        <svg width="20px" height="20px" viewBox="-5 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    
+                            <title>chevron-right</title>
+                            <desc>Created with Sketch Beta.</desc>
+                            <defs>
+                        
+                        </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                                <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-473.000000, -1195.000000)" fill="#000000">
+                                    <path d="M486.717,1206.22 L474.71,1195.28 C474.316,1194.89 473.678,1194.89 473.283,1195.28 C472.89,1195.67 472.89,1196.31 473.283,1196.7 L484.566,1206.98 L473.283,1217.27 C472.89,1217.66 472.89,1218.29 473.283,1218.69 C473.678,1219.08 474.316,1219.08 474.71,1218.69 L486.717,1207.75 C486.927,1207.54 487.017,1207.26 487.003,1206.98 C487.017,1206.71 486.927,1206.43 486.717,1206.22" id="chevron-right" sketch:type="MSShapeGroup">
+                        
+                        </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+    </section> -->
     
    
 
     <script src="../assets/JS/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/JS/swiper.js"></script>
+    <script src="../assets/JS/gallery.js"></script>
     
 
     

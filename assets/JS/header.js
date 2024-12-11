@@ -17,9 +17,13 @@ menu.addEventListener("click",function(){
      
     if(nav_links.classList.contains("hidden")){
         nav_links.classList.remove("hidden")
-        document.body.style.overflow="hidden"
+        document.body.classList.add("h-screen","overflow-hidden")
+        document.body.setAttribute("data-lenis-prevent","true")
     }
     else{
         nav_links.classList.add("hidden")
+        document.body.classList.remove("h-screen","overflow-hidden")
+        document.body.removeAttribute("data-lenis-prevent","true")
+
     }
 })

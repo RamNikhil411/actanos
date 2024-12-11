@@ -17,6 +17,7 @@ menu.addEventListener("click",function(){
      
     if(nav_links.classList.contains("hidden")){
         nav_links.classList.remove("hidden")
+        document.body.style.overflow="hidden"
     }
     else{
         nav_links.classList.add("hidden")

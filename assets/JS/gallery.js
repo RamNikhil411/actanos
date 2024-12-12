@@ -4,6 +4,7 @@
  gallery_btn.addEventListener("click",()=>{
     if(gallery.classList.contains('hidden')){
         gallery.classList.remove('hidden')
+        document.body.style.overflow="hidden"
     }
  })
 
@@ -11,4 +12,6 @@
 
  close_btn.addEventListener("click",()=>{
     gallery.classList.add('hidden')
+    document.body.style.overflow="none"
+
  })

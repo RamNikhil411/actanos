@@ -57,7 +57,7 @@ var swiper =new Swiper(".mySwiper",{
     watchSlidesProgress: true,
   });
   var swiper2 = new Swiper(".gallery", {
-    spaceBetween: 15,
+    spaceBetween: 10,
     navigation: {
       nextEl: ".next",
       prevEl: ".prev",
@@ -73,13 +73,15 @@ var swiper =new Swiper(".mySwiper",{
   });
 
   var swiper = new Swiper(".land-thumbs", {
-    spaceBetween: 10,
+    spaceBetween: 15,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+    
   });
   var swiper2 = new Swiper(".land-gallery", {
     spaceBetween: 10,
+    mousewheel:true,
     navigation: {
       nextEl: ".next",
       prevEl: ".prev",

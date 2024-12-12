@@ -51,16 +51,21 @@ var swiper =new Swiper(".mySwiper",{
   
   //gallery
   var swiper = new Swiper(".thumbs", {
-    spaceBetween: 10,
+    spaceBetween: 15,
     slidesPerView: 7,
     freeMode: true,
     watchSlidesProgress: true,
   });
   var swiper2 = new Swiper(".gallery", {
-    spaceBetween: 10,
+    spaceBetween: 15,
     navigation: {
       nextEl: ".next",
       prevEl: ".prev",
+    },
+    pagination:{
+      el:".index",
+      type:"fraction"
+
     },
     thumbs: {
       swiper: swiper,

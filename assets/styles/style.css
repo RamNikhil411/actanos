@@ -29,6 +29,12 @@
     border-radius:0px;
 }
 
+.swiper-slide-thumb-active{
+    outline-width: medium;
+    outline-style: solid;
+    outline-color: white;
+    outline-offset: 3px;
+}
 
 
 

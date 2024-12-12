@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <header class="fixed top-0 w-full bg-white z-[1000]">
         <div
             class="px-3 md:px-8 lg:px-10 xl:px-12 3xl:px-24 py-4 space-y-14 lg:flex justify-between w-full lg:items-center    lg:space-y-0">
@@ -73,7 +73,7 @@
                 <div class="py-10 space-y-4  lg:flex lg:items-center lg:space-y-0  lg:py-0">
                     <ul
                         class=" flex flex-col gap-y-4 lg:flex-row lg:gap-x-8 lg:gap-y-0 lg:bg-black lg:text-white lg:py-2.5 lg:px-7 3xl:py-7 3xl:px-12 rounded-full lg:text-sm 3xl:text-2xl mb-4 lg:mb-0 ">
-                        <li class="font-dm_sans"><a href="#about">About</a></li>
+                        <li class="font-dm_sans"><a href="#about" class="">About</a></li>
                         <li class="font-dm_sans"><a href="#services">Services</a></li>
                         
                         <li class="font-dm_sans"><a href="#Testimonals">Testimonals</a></li>
@@ -91,7 +91,7 @@
         </div>
     </header>
     <section id="about"
-        class="bg-[url('assets/images/banner_bg.png')] bg-cover lg:bg-contain bg-no-repeat  lg:bg-center ">
+        class="bg-[url('assets/images/banner_bg.png')] bg-cover lg:bg-contain bg-no-repeat  lg:bg-center content ">
         <div class=" px-3 md:px-8 lg:px-10 xl:px-12 3xl:px-32 ">
             <div class="py-12 mt-24 lg:py-24 md:py-48 3xl:py-72 xl:py-36 2xl:py-20 3xl:py-16">
                 <h1
@@ -105,7 +105,7 @@
             <div class="mx-auto flex items-center justify-center w-full">
             <div class="flex relative justify-center items-center hidden md:flex  ">
                 <a href="caseStudies/eruvaka.html"
-                    class="card1 w-fit md:w-[150px]  lg:w-fit h-[300px]  lg:h-[270px] 3xl:h-[450px] bg-white absolute rounded-xl shadow-xl -translate-x-[170%] hover:!-translate-y-[10%] hover:shadow-2xl">
+                    class="card1 w-fit md:w-[150px]  lg:w-fit h-[300px]  lg:h-[270px] 3xl:h-[450px] bg-white absolute rounded-xl shadow-xl -translate-x-[170%] hover:!-translate-y-[10%] hover:shadow-2xl hover:duration-300">
                     <div class="p-1 ">
                         <img src="assets/images/case-study/case-study-mobile/eruvaka.webp" alt="" class="w-48 3xl:w-80">
                     </div>
@@ -135,7 +135,7 @@
                     </div>
                 </a>
                 <a href="caseStudies/LandCare.html"
-                    class="card2 w-fit lg:w-fit  md:w-[150px] h-[300px] lg:h-[270px] 3xl:h-[450px] bg-white  rounded-xl shadow-xl absolute -translate-x-[55%] hover:!-translate-y-[10%] hover:shadow-2xl  ">
+                    class="card2 w-fit lg:w-fit  md:w-[150px] h-[300px] lg:h-[270px] 3xl:h-[450px] bg-white  rounded-xl shadow-xl absolute -translate-x-[55%] hover:!-translate-y-[10%] hover:shadow-2xl hover:duration-300  ">
                     <div class="p-1">
                         <img src="assets/images/case-study/case-study-mobile/landcare.webp" alt=""
                             class="w-48 3xl:w-80">
@@ -167,7 +167,7 @@
                     </div>
                 </a>
                 <a href="caseStudies/peepulAgri.html"
-                    class="card3  md:w-[150px] lg:w-fit h-[300px] lg:h-[270px] 3xl:h-[450px]  bg-white  rounded-xl z-20  shadow-xl relative translate-x-[55%] hover:!-translate-y-[10%] hover:shadow-2xl  ">
+                    class="card3  md:w-[150px] lg:w-fit h-[300px] lg:h-[270px] 3xl:h-[450px]  bg-white  rounded-xl z-20  shadow-xl relative translate-x-[55%] hover:!-translate-y-[10%] hover:shadow-2xl hover:duration-300  ">
                     <div class="p-1">
                         <img src="assets/images/case-study/case-study-mobile/peepulagri.webp" alt=""
                             class="w-48 3xl:w-80">
@@ -198,7 +198,7 @@
                     </div>
                 </a>
                 <a href="caseStudies/Figlinks.html"
-                    class="card4 md:w-[150px] lg:w-fit h-[300px] lg:h-[270px] 3xl:h-[450px]  bg-white  rounded-xl shadow-xl absolute translate-x-[170%] hover:!-translate-y-[10%] hover:shadow-2xl">
+                    class="card4 md:w-[150px] lg:w-fit h-[300px] lg:h-[270px] 3xl:h-[450px]  bg-white  rounded-xl shadow-xl absolute translate-x-[170%] hover:!-translate-y-[10%] hover:shadow-2xl hover:duration-300">
                     <div class="p-1">
                         <img src="assets/images/case-study/case-study-mobile/figlinks.webp" alt=""
                             class="w-48 3xl:w-80">
@@ -384,7 +384,7 @@
         <div class="px-3 md:px-8 lg:px-10 xl:px-12 3xl:px-32 space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0 ">
             <div class="lg:border-l  lg:border-y lg:flex lg:items-center">
                 <div
-                    class="font-dm_sans font-semibold  text-5xl 2xl:text-6xl lg:text-4xl 3xl:text-9xl text-4-color  lg:px-20  text-center lg:text-left leading-[70px] ">
+                    class="font-dm_sans font-semibold  text-5xl 2xl:text-6xl leading-[80px] lg:text-4xl 3xl:text-9xl text-4-color  lg:px-20  text-center lg:text-left image-2-content ">
                     We Act <br>
                     
                     We Believe <br>
@@ -392,13 +392,13 @@
                     We Deliver <br>
                 </div>
                 <div class="hidden lg:block">
-                    <object data="assets/images/RocketAnimation (2).svg" type="" class="w-32 2xl:w-52"></object>
+                    <object data="assets/images/RocketAnimation (2).svg" type="" class="w-32 2xl:w-52 rocket"></object>
                 </div>
 
             </div>
             <div class="space-y-6 order-first lg:space-y-0">
 
-                <div class="relative h-[50vh] flex justify-center items-center border-y">
+                <div class="relative h-[60vh] flex justify-center items-center border-y">
                     <div class="grid grid-cols-2 grid-rows-2 h-full w-full ">
                         <div class="border-r">
                         </div>
@@ -408,22 +408,22 @@
 
                     </div>
                     <div class="absolute ">
-                        <img src="assets/images/Design.png" alt="" class="lg:w-60 xl:w-80 3xl:w-[600px]">
+                        <img src="assets/images/Design.png" alt="" class="lg:w-60 xl:w-80 3xl:w-[600px] image-2" >
                     </div>
                 </div>
             </div>
         </div>
 
     </section>
-    <section id="services" class="mt-20">
+    <section id="services" class="mt-20 overflow-hidden">
         <div class=" px-3 md:px-8 lg:px-10 xl:px-12 3xl:px-32 space-y-6 relative lg:space-y-8 xl:space-y-14  ">
 
 
             <div class="flex flex-col gap-y-5 lg:gap-y-0 lg:flex-row  lg:justify-between">
-                <div class="font-bebasNeue text-4xl 2xl:text-6xl lg:text-5xl 3xl:text-9xl">
+                <div class="font-bebasNeue text-4xl 2xl:text-6xl lg:text-5xl 3xl:text-9xl fade-in-element">
                     Services
                 </div>
-                <div class="font-dm_sans text-sm lg:text-[15px] 3xl:text-3xl text-5-color ">
+                <div class="font-dm_sans text-sm lg:text-[15px] 3xl:text-3xl text-5-color fade-out-element ">
                     At Actanos, we endlessly pursue innovation and enhancement. Our passion <br class="hidden lg:block"> for design and coding drives
                     us to evolve perpetually, staying ahead in the<br class="hidden lg:block"> digital world  and ensuring you can always rely on us
                     to adapt and innovate.
@@ -434,35 +434,35 @@
                     <li class="py-4 lg:py-5 3xl:py-8 lg:hover:bg-19-color flex justify-center relative gap-x-6 group border-b ">
                         <div><img src="assets/images/services/pen.svg" alt=""
                                 class="w-32 absolute -top-[44px] left-72 hidden lg:group-hover:block "></div>
-                        <div>Graphic </div>
+                        <div class="fade-up">Graphic </div>
                         <div><img src="assets/images/services/paintImage.svg" alt=""
                                 class="w-32 absolute right-52 hidden lg:group-hover:block "></div>
                     </li>
                     <li class="py-4 lg:py-5 3xl:py-8 lg:hover:bg-19-color flex justify-center relative group border-b">
                         <div><img src="assets/images/services/Frame 103.webp" alt=""
                                 class="w-32 absolute -top-[50px] left-40 hidden lg:group-hover:block"></div>
-                        <div>Desktop Application Development</div>
+                        <div class="fade-up">Desktop Application Development</div>
                         <div><img src="assets/images/services/Frame 1995.webp" alt=""
                                 class="w-32 absolute right-56 hidden lg:group-hover:block"></div>
                     </li>
                     <li class="py-4 lg:py-5 3xl:py-8 lg:hover:bg-19-color flex justify-center relative group border-b">
-                        <div><img src="assets/images/services/Frame 103.webp" alt=""
+                        <div ><img src="assets/images/services/Frame 103.webp" alt=""
                                 class="w-32 absolute -top-[60px] left-56 hidden lg:group-hover:block"></div>
-                        <div>WEB APPLICATION DEVELOPMENT</div>
+                        <div class="fade-up">WEB APPLICATION DEVELOPMENT</div>
                         <div><img src="assets/images/services/Frame 1967.webp" alt=""
                                 class="w-32 absolute right-56 -bottom-[65px] hidden lg:group-hover:block"></div>
                     </li>
                     <li class="py-4 lg:py-5 3xl:py-8 lg:hover:bg-19-color flex justify-center relative group border-b">
                         <div><img src="assets/images/services/Frame 1944.webp" alt=""
                                 class="w-32 absolute -top-[60px] left-72 hidden lg:group-hover:block"></div>
-                        <div>CLOUD SERVICES</div>
+                        <div class="fade-up">CLOUD SERVICES</div>
                         <div><img src="assets/images/services/cloud.svg" alt=""
                                 class="w-32 absolute right-56 -bottom-[65px] hidden lg:group-hover:block"></div>
                     </li>
                     <li class="py-4 lg:py-5 3xl:py-8 lg:hover:bg-19-color flex justify-center relative group border-b">
                         <div><img src="assets/images/services/Frame 1985.webp" alt=""
                                 class="w-32 absolute -top-[60px] left-72 hidden lg:group-hover:block"> </div>
-                        <div>Infrastructure as a service</div>
+                        <div class="fade-up">Infrastructure as a service</div>
                         <div><img src="assets/images/services/Frame 1984.webp" alt=""
                                 class="w-32 absolute right-56 -bottom-[65px] hidden lg:group-hover:block"></div>
                     </li>
@@ -471,7 +471,7 @@
                             <img src="assets/images/services/Frame 103.webp" alt=""
                                 class="w-32 absolute -top-[60px] left-72 hidden lg:group-hover:block">
                         </div>
-                        <div>MOBILE APP DEVELOPMENT</div>
+                        <div class="fade-up">MOBILE APP DEVELOPMENT</div>
                         <div><img src="assets/images/services/Frame 102.webp" alt=""
                                 class="w-32 absolute right-56 -bottom-[65px] hidden lg:group-hover:block"></div>
                     </li>
@@ -480,7 +480,7 @@
         </div>
     </section>
     <!--our works-->
-    <section id="works" class="mt-20 ">
+    <section  class="mt-20 ">
         <div class="px-3 md:px-6 lg:px-10 xl:px-12 3xl:px-32 lg:space-y-8 xl:space-y-14 space-y-6">
 
 
@@ -510,16 +510,16 @@
     </section>
     <!--Services-->
 
-    <section class="mt-20 ">
+    <section class="mt-20  overflow-hidden">
         <div>
             <div class="px-3 md:px-6 lg:px-10 xl:px-12 3xl:px-32">
                 <div class="lg:flex lg:justify-between lg:items-center">
-                    <h1 class="font-bebasNeue text-[40px] lg:text-6xl 3xl:text-9xl border-b leading-none py-2 ">
+                    <h1 class="font-bebasNeue text-[40px] lg:text-6xl 3xl:text-9xl border-b leading-none py-2 drive">
                         Driving Success Through <span class="text-[#BDBDBD]">Culture</span>
                     </h1>
                     <div class="hidden lg:block">
                        <a href="mailto:mailto:contact@actanos.com"> <button
-                            class="font-dm_sans text-white bg-black font-medium py-2 px-4 rounded-full text-xs 3xl:text-xl 3xl:tracking-widest flex items-center gap-2">
+                            class="font-dm_sans text-white bg-black font-medium py-2 px-4 rounded-full text-xs 3xl:text-xl 3xl:tracking-widest flex items-center gap-2 drive-become">
                             Become a client <div><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0 6H12M12 6L7 1M12 6L7 11" stroke="#BEF941" stroke-width="1.5" />
@@ -529,7 +529,7 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-20 lg:mt-4"> <!--grid-->
                     <div class="lg:space-y-8">
-                        <p class=" text-5-color font-dm_sans py-2 3xl:text-3xl">
+                        <p class=" text-5-color font-dm_sans py-2 3xl:text-3xl drive-content">
                             At Actanos, our passionate team drives us forward with their enthusiasm for their work.
                             Creativity and collaboration are the heartbeat of our culture. We know a vibrant and
                             supportive environment is the key to achieving outstanding results.
@@ -537,7 +537,7 @@
                         <div class="mt-2 lg:mt-0 space-y-4">
 
                             <div class="grid grid-cols-2 gap-2 lg:gap-3 md:grid-rows-2">
-                                <div class="md:grid md:grid-cols-2  bg-6-color rounded-2xl p-1 lg:p-4">
+                                <div class="md:grid md:grid-cols-2  bg-6-color rounded-2xl p-4 lg:p-4 stats">
                                     <div class="bg-6-color rounded-2xl ">
                                         <h3 class="font-bebasNeue text-[26px] lg:text-5xl 3xl:text-7xl">+12</h3>
                                         <p class="text-xs text-5-color 3xl:text-2xl  font-dm_sans pb-10">Years
@@ -550,7 +550,7 @@
                                             class="w-20 3xl:w-28">
                                     </div>
                                 </div>
-                                <div class="md:grid md:grid-cols-2 bg-6-color rounded-2xl p-1 lg:p-4">
+                                <div class="md:grid md:grid-cols-2 bg-6-color rounded-2xl p-4 lg:p-4 stats">
                                     <div class="bg-6-color rounded-2xl ">
                                         <h3 class="font-bebasNeue text-[26px] lg:text-5xl 3xl:text-7xl">+19</h3>
                                         <p class="text-xs text-5-color font-dm_sans 3xl:text-2xl pb-10">Software
@@ -563,7 +563,7 @@
                                             class="w-20 3xl:w-28">
                                     </div>
                                 </div>
-                                <div class="md:grid md:grid-cols-2 bg-6-color rounded-2xl p-1 lg:p-4">
+                                <div class="md:grid md:grid-cols-2 bg-6-color rounded-2xl p-4 lg:p-4 stats">
                                     <div class="bg-6-color rounded-2xl ">
                                         <h3 class="font-bebasNeue text-[26px] lg:text-5xl 3xl:text-7xl">+22</h3>
                                         <p class="text-xs text-5-color font-dm_sans 3xl:text-2xl pb-10">Years of
@@ -575,7 +575,7 @@
                                             class="w-20 3xl:w-28">
                                     </div>
                                 </div>
-                                <div class="md:grid md:grid-cols-2 bg-6-color rounded-2xl p-1 lg:p-4">
+                                <div class="md:grid md:grid-cols-2 bg-6-color rounded-2xl p-4 lg:p-4 stats">
                                     <div class="bg-6-color rounded-2xl p-1">
                                         <h3 class="font-bebasNeue text-[26px] lg:text-5xl 3xl:text-7xl">+30</h3>
                                         <p class="text-xs text-5-color font-dm_sans 3xl:text-2xl pb-10">Team members</p>
@@ -589,7 +589,7 @@
                         </div>
                     </div>
                     <div class="hidden lg:block py-8 justify-center justify-self-end px-7">
-                        <img src="assets/images/innovate.png" alt="" class="w-[400px] 3xl:w-[650px]">
+                        <img src="assets/images/innovate.png" alt="" class="w-[400px] 3xl:w-[650px] innovate">
                     </div>
 
                 </div>
@@ -1206,7 +1206,7 @@
         <div class="px-3 lg:px-10 xl:px-12 3xl:px-32 lg:grid lg:grid-cols-[40%_60%] lg:justify-between space-y-4">
             <div class=" space-y-4">
                 <div
-                    class="font-bebasNeue text-[40px] leading-none  md:text-4xl xl:text-6xl lg:text-5xl 3xl:text-9xl lg:text-4-color">
+                    class="font-bebasNeue text-[40px] leading-none  md:text-4xl xl:text-6xl lg:text-5xl 3xl:text-9xl lg:text-4-color test">
                     Experiences That <br class="hidden lg:block"> Speak <br class="md:hidden"> <span
                         class="text-[#BDBDBD]">Volumes</span>
                 </div>
@@ -1435,10 +1435,10 @@
         </div>
     </section>
 
-    <section class="bg-[url('assets/images/Latest_cases_bg.webp')] bg-center mt-20" id="case-study">
+    <section class="bg-[url('assets/images/Latest_cases_bg.webp')] bg-center mt-20 overflow-hidden" id="case-study">
         <div class="px-3 py-6 md:px-10 py-10 lg:px-32 lg:py-16 lg:space-y-12 space-y-4 ">
             <div class="lg:flex lg:justify-between">
-                <h1 class="text-white font-bebasNeue text-4xl">Latest cases</h1>
+                <h1 class="text-white font-bebasNeue text-4xl latest">Latest cases</h1>
                 <div class="hidden lg:block">
                     <a href="mailto:contact@actanos.com"><button
                         class="font-dm_sans text-black bg-white font-medium py-2 px-4 rounded-full text-xs 3xl:text-xl 3xl:tracking-widest flex items-center gap-2">
@@ -1452,7 +1452,7 @@
             <div>
                 <div class="swiper LatestCases">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide bg-white rounded-md 3xl:rounded-xl">
+                        <div class="swiper-slide bg-white rounded-md 3xl:rounded-xl h-[450px] 3xl:h-[620px]">
                             <div class="">
                                 <div class="p-1">
                                     <img src="assets/images/case-study/case1.webp" alt="" class="w-full">
@@ -1461,13 +1461,13 @@
                                     <h1 class=" text-2xl 3xl:text-4xl font-bebasNeue">
                                         From Automation to Augmentation: Efficiency enhancement of the platform
                                     </h1>
-                                    <p class="font-dm_sans 3xl:text-2xl text-5-color pb-[45px] ">A leading HRtech SaaS
+                                    <p class="font-dm_sans 3xl:text-2xl text-5-color  ">A leading HRtech SaaS
                                         platform in the US and India aimed to revolutionize hiring by making every
                                         candidate's level-one interviews inclusive and fair.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide bg-white  rounded-md 3xl:rounded-xl">
+                        <div class="swiper-slide bg-white  rounded-md 3xl:rounded-xl h-[450px] 3xl:h-[620px]">
                             <div class=" ">
                                 <div class="p-1">
                                     <img src="assets/images/case-study/case2.webp" class="w-full">
@@ -1484,7 +1484,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide bg-white  rounded-md 3xl:rounded-xl">
+                        <div class="swiper-slide bg-white  rounded-md 3xl:rounded-xl h-[450px] 3xl:h-[620px]">
                             <div class=" ">
                                 <div class="p-1">
                                     <img src="assets/images/case-study/case3.webp" alt="" class="w-full">
@@ -1500,7 +1500,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide bg-white  rounded-md 3xl:rounded-xl">
+                        <div class="swiper-slide bg-white  rounded-md 3xl:rounded-xl h-[450px] 3xl:h-[620px]">
                             <div class=" ">
                                 <div class="p-1">
                                     <img src="assets/images/case-study/eruvaka.webp" alt="" class="w-full">
@@ -1547,20 +1547,20 @@
         </div>
 
     </section>
-    <section class="bg-[url('assets/images/Actanos_bg.webp')] xl:bg-cover lg:bg-contain bg-no-repeat xl:bg-center  ">
+    <section class="bg-[url('assets/images/Actanos_bg.webp')] xl:bg-cover lg:bg-contain bg-no-repeat xl:bg-center  overflow-hidden">
         <div class="px-3 md:px-6">
             <div
                 class="px-2 flex flex-col justify-center items-center gap-6 3xl:gap-8 pt-20  lg:pb-[400px] 3xl:pb-[600px]">
                 <div class="space-y-2 ">
-                    <h1 class="font-dm_sans font-medium text-5xl  xl:text-7xl 3xl:text-9xl text-center ">
+                    <h1 class="font-dm_sans font-medium text-5xl  xl:text-7xl 3xl:text-9xl text-center bring ">
                         Bring Your Vision to Life
                     </h1>
-                    <p class="text-center font-dm_sans text-5-color 3xl:text-2xl">Have a project in mind? Let's
+                    <p class="text-center font-dm_sans text-5-color 3xl:text-2xl bring-content">Have a project in mind? Let's
                         collaborate to make it happen.</p>
                 </div>
                 <div>
                     <a href="mailto:contact@actanos.com"><button
-                        class="bg-black text-white px-4 py-2 3xl:py-3 3xl:px-6 rounded-full text-sm 3xl:text-2xl justify-self-center font-dm_sans">
+                        class="bg-black text-white px-4 py-2 3xl:py-3 3xl:px-6 rounded-full text-sm 3xl:text-2xl justify-self-center font-dm_sans bring-become">
                         + Become A Client
                     </button></a>
                 </div>
@@ -1627,8 +1627,11 @@
     <script src="assets/JS/swiper.js"></script>
     <script src="assets/JS/header.js"></script>
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="assets/JS/lenis.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+   
+
     <script src="assets/JS/cards.js"></script>
 
 </body>

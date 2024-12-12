@@ -52,11 +52,28 @@ var swiper =new Swiper(".mySwiper",{
   //gallery
   var swiper = new Swiper(".thumbs", {
     spaceBetween: 10,
-    slidesPerView: 4,
+    slidesPerView: 7,
     freeMode: true,
     watchSlidesProgress: true,
   });
   var swiper2 = new Swiper(".gallery", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+
+  var swiper = new Swiper(".land-thumbs", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".land-gallery", {
     spaceBetween: 10,
     navigation: {
       nextEl: ".next",

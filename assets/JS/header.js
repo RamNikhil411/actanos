@@ -51,3 +51,25 @@ nav_links.addEventListener("click",function(){
     }
 })
 
+const sections = document.querySelectorAll("section[id]");
+
+function scrollTracker() {
+  const currentYScroll = window.scrollY;
+
+  sections.forEach((section) => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 100;
+    const id = section.getAttribute("id");
+    const currentNavLink = document.querySelector(`.navlinks a[href*="#${id}"]`);
+    if (
+      currentYScroll > sectionTop &&
+      currentYScroll <= sectionTop + sectionHeight
+    ) {
+      currentNavLink.classList.add("text-[#D8D8D8]");
+    } else {
+      currentNavLink.classList.remove("text-[#D8D8D8]");
+    }
+  });
+}
+
+window.addEventListener("scroll", scrollTracker);

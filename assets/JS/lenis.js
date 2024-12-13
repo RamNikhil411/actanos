@@ -422,24 +422,15 @@ gsap.fromTo(".case-img",{
 
 gsap.fromTo(".card",{
 
-  y:100,
-  opacity:0.5
+  y:100
 },{
-   y:0,
-   opacity:1,
-  scrollTrigger: {
-    trigger: ".card",
-    start: "top 90%",
-    end: "bottom center",
-    scrub: true,
-    toggleActions:"play complete restart none"
-  }
-})
+  y:0,
+duration:2
+}
+)
 
-gsap.from('.design', {
-  y: 100,
-  stagger: 0.1 
-})
+
+
 
 
 

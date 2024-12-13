@@ -42,6 +42,7 @@ nav_links.addEventListener("click",function(){
 
     if(screen.width < 1024){
         nav_links.classList.add("hidden")
+        document.body.classList.remove("h-screen","overflow-hidden")
 
     }
     else{

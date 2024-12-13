@@ -90,4 +90,9 @@ var swiper =new Swiper(".mySwiper",{
     thumbs: {
       swiper: swiper,
     },
+    pagination:{
+      el:".index",
+      type:"fraction"
+
+    },
   });

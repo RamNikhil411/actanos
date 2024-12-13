@@ -53,7 +53,7 @@
                     </svg></a>
                 </div>
                 <div class="lg:hidden">
-                    <button class="menu">
+                    <button class="menu menubar">
                         <svg class="w-[35px] h-[17px] md:w-[45px] md:h-[22px]" width="45" height="22" viewBox="0 0 45 22" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7H37.362C37.9049 7 38.4244 6.77931 38.8014 6.38861L44 1" stroke="black"
@@ -61,7 +61,7 @@
                             <path d="M44 15H7.63799C7.09511 15 6.57555 15.2207 6.19863 15.6114L1 21" stroke="black"
                                 stroke-width="2" stroke-linecap="round" />
                         </svg>
-                        <svg class="hidden w-[22px] h-[23px]" width="27" height="28" viewBox="0 0 27 28" fill="none"
+                        <svg class="hidden w-[22px] h-[23px] md:w-[27px] md:h-[28px] cross" width="27" height="28" viewBox="0 0 27 28" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M26.5433 25.1431C26.6681 25.2679 26.7671 25.4161 26.8347 25.5793C26.9023 25.7424 26.937 25.9172 26.937 26.0938C26.937 26.2703 26.9023 26.4452 26.8347 26.6083C26.7671 26.7714 26.6681 26.9196 26.5433 27.0445C26.4184 27.1693 26.2702 27.2684 26.1071 27.3359C25.9439 27.4035 25.7691 27.4383 25.5925 27.4383C25.416 27.4383 25.2412 27.4035 25.078 27.3359C24.9149 27.2684 24.7667 27.1693 24.6418 27.0445L13.4988 15.8997L2.35575 27.0445C2.10361 27.2966 1.76163 27.4383 1.40504 27.4383C1.04846 27.4383 0.706483 27.2966 0.454341 27.0445C0.202199 26.7923 0.0605469 26.4504 0.0605469 26.0938C0.0605469 25.7372 0.202199 25.3952 0.454341 25.1431L11.5991 14L0.454341 2.85697C0.202199 2.60483 0.0605469 2.26285 0.0605469 1.90626C0.0605469 1.54968 0.202199 1.2077 0.454341 0.955562C0.706483 0.703419 1.04846 0.561768 1.40504 0.561768C1.76163 0.561768 2.10361 0.703419 2.35575 0.955562L13.4988 12.1003L24.6418 0.955562C24.894 0.703419 25.236 0.561768 25.5925 0.561768C25.9491 0.561768 26.2911 0.703419 26.5433 0.955562C26.7954 1.2077 26.937 1.54968 26.937 1.90626C26.937 2.26285 26.7954 2.60483 26.5433 2.85697L15.3985 14L26.5433 25.1431Z"
@@ -93,8 +93,10 @@
             </button></a>
         </div>
     </header>
-    <section 
-        class="bg-[url('assets/images/banner_bg.png')] bg-cover lg:bg-contain bg-no-repeat  lg:bg-center content ">
+    <section class="relative" >
+        <div class="">
+            <object data="assets/images/BounceAnimation.svg" type="" class="absolute z-[-1] object-cover"></object>
+        </div>
         <div class=" px-3 md:px-8 lg:px-10 xl:px-12 3xl:px-32 ">
             <div class="py-12 mt-24 lg:py-24 md:py-48 3xl:py-72 xl:py-36 2xl:py-20 3xl:py-16">
                 <h1
@@ -107,13 +109,13 @@
             <!--web version-->
             <div class="hidden md:block">
                 <div class="grid grid-cols-4 px-2 gap-4">
-                    <a href="caseStudies/eruvaka.html" class=" bg-white border  rounded-md card shadow-xl hover:!translate-y-[-10px] duration-300">
+                    <a href="caseStudies/eruvaka.html" class=" bg-white border  rounded-md card shadow-xl hover:!translate-y-[-10px] duration-300 transition-all">
                         <div class=>
-                            <img src="assets/images/case-study/case-study-mobile/eruvaka.webp" alt="" class="w-full">
+                            <img src="assets/images/case-study/case-study-mobile/eruvaka.webp" alt="eruvaka-main" class="w-full">
                         </div>
                         <div class="px-3 py-3 pb-8 space-y-2 3xl:space-y-6">
                         <div class="flex justify-between items-center">
-                            <div><img src="assets/images/card-logos/eruvaka.svg" alt="" class="w-14 lg:w-28 3xl:w-52 mt-1"></div>
+                            <div><img src="assets/images/card-logos/eruvaka.svg" alt="eruvaka-logo" class="w-14 lg:w-28 3xl:w-52 mt-1"></div>
                             <h3 class="font-bebasNeue md:text-sm lg:text-base 3xl:text-3xl">Case study</h3>
                         </div>
                         <ul class="font-dm_sans md:text-sm lg:text-base 3xl:text-3xl space-y-[3px]  text-5-color">
@@ -129,13 +131,13 @@
                         </ul>
                         </div>
                     </a>
-                    <a href="caseStudies/LandCare.html" class=" bg-white border  rounded-md card shadow-xl hover:!translate-y-[-10px] duration-300">
+                    <a href="caseStudies/LandCare.html" class=" bg-white border  rounded-md card shadow-xl hover:!translate-y-[-10px] duration-300 transition-all">
                         <div class=>
-                            <img src="assets/images/case-study/case-study-mobile/landcare.webp" alt="" class="w-full">
+                            <img src="assets/images/case-study/case-study-mobile/landcare.webp" alt="landcare" class="w-full">
                         </div>
                         <div class="px-3 py-3 space-y-2 3xl:space-y-6">
                         <div class="flex justify-between items-center">
-                            <div><img src="assets/images/card-logos/land-care-1.svg" alt="" class="3xl:w-16 lg:w-9"></div>
+                            <div><img src="assets/images/card-logos/land-care-1.svg" alt="landcare-logo" class="3xl:w-16 lg:w-9"></div>
                             <h3 class="font-bebasNeue md:text-sm lg:text-base 3xl:text-3xl">Case study</h3>
                         </div>
                         <ul class="font-dm_sans space-y-[3px] md:text-sm lg:text-base 3xl:text-3xl text-5-color">
@@ -151,13 +153,13 @@
                         </ul>
                         </div>
                     </a>
-                    <a href="caseStudies/Figlinks.html" class=" bg-white border  rounded-md card shadow-xl hover:!translate-y-[-10px] duration-300">
+                    <a href="caseStudies/Figlinks.html" class=" bg-white border  rounded-md card shadow-xl hover:!translate-y-[-10px] duration-300 transition-all">
                         <div class=>
-                            <img src="assets/images/case-study/case-study-mobile/figlinks.webp" alt="" class="w-full">
+                            <img src="assets/images/case-study/case-study-mobile/figlinks.webp" alt="figlinks" class="w-full">
                         </div>
                         <div class="px-3 py-3 space-y-5 3xl:space-y-10">
                         <div class="flex justify-between items-center">
-                            <div><img src="assets/images/card-logos/figlinks.svg" alt="" class="w-16 lg:w-20 3xl:w-60"></div>
+                            <div><img src="assets/images/card-logos/figlinks.svg" alt="Figlinks-logo" class="w-16 lg:w-20 3xl:w-60"></div>
                             <h3 class="font-bebasNeue md:text-sm lg:text-base 3xl:text-3xl ">Case study</h3>
                         </div>
                         <ul class="font-dm_sans space-y-[3px] md:text-sm lg:text-base 3xl:text-3xl text-5-color">
@@ -173,13 +175,13 @@
                         </ul>
                         </div>
                     </a>
-                    <a href="caseStudies/peepulAgri.html" class=" bg-white border rounded-md card shadow-xl hover:!translate-y-[-10px] duration-300">
+                    <a href="caseStudies/peepulAgri.html" class=" bg-white border rounded-md card shadow-xl hover:!translate-y-[-10px] duration-300 ">
                         <div class=>
-                            <img src="assets/images/case-study/case-study-mobile/peepulagri.webp" alt="" class="w-full">
+                            <img src="assets/images/case-study/case-study-mobile/peepulagri.webp" alt="peepul-agri" class="w-full">
                         </div>
                         <div class="px-3 py-3 space-y-2 3xl:space-y-6">
                         <div class="flex justify-between items-center">
-                            <div><img src="assets/images/card-logos/peepul-agri.svg" alt="" class="3xl:w-32"></div>
+                            <div><img src="assets/images/card-logos/peepul-agri.svg" alt="peepulAgri" class="3xl:w-32"></div>
                             <h3 class="font-bebasNeue md:text-sm lg:text-base 3xl:text-3xl">Case study</h3>
                         </div>
                         <ul class="font-dm_sans space-y-[3px] md:text-sm lg:text-base 3xl:text-3xl text-5-color">
@@ -205,26 +207,26 @@
                         <div class="swiper-slide flex justify-center rounded-lg w-full h-full shadow-lg">
                             <a href="caseStudies/eruvaka.html" class=" w-full  bg-white space-y-3 rounded-xl ">
                                 <div class="p-1">
-                                    <img src="assets/images/case-study/case-study-mobile/eruvaka.webp" alt=""
+                                    <img src="assets/images/case-study/case-study-mobile/eruvaka.webp" alt="eruvaka-main"
                                         class="w-full">
                                 </div>
                                 <div class="space-y-3.5 px-4">
                                     <div class="flex justify-between items-center">
-                                        <img src="assets/images/eruvaka/Eruvaka-logo.webp" alt="" class="w-28 ">
+                                        <img src="assets/images/eruvaka/Eruvaka-logo.webp" alt="eruvaka-logo" class="w-28 ">
                                         <div class="font-bebasNeue text-lg ">Case Study</div>
                                     </div>
                                     <div cl>
                                         <ul class=" text-5-color font-dm_sans space-y-1.5">
                                             <li class="flex gap-1.5 items-start">
-                                                <div><img src="assets/images/bluetick.svg" alt="" class="w-4 mt-1"></div>
+                                                <div><img src="assets/images/bluetick.svg" alt="bluetick" class="w-4 mt-1"></div>
                                                 <span>On-farm diagonastics</span>
                                             </li>
                                             <li class="flex gap-1.5 items-center">
-                                                <div><img src="assets/images/bluetick.svg" alt="" class="w-4 mt-1"></div>
+                                                <div><img src="assets/images/bluetick.svg" alt="bluetick" class="w-4 mt-1"></div>
                                                 <span>Risk deduction</span>
                                             </li>
                                             <li class="flex gap-1.5 items-start">
-                                                <img src="assets/images/bluetick.svg" alt="" class="w-4 mt-1">
+                                                <img src="assets/images/bluetick.svg" alt="bluetick" class="w-4 mt-1">
                                                 <div>Enhancing productivity for farmers</div>
                                                 
                                             </li>
@@ -237,27 +239,27 @@
                             <a href="caseStudies/LandCare.html"
                                 class=" w-full  bg-white  rounded-xl ">
                                 <div class="p-1">
-                                    <img src="assets/images/case-study/case-study-mobile/landcare.webp" alt=""
+                                    <img src="assets/images/case-study/case-study-mobile/landcare.webp" alt="landcare"
                                         class="w-full">
                                 </div>
                                 <div class=" px-4 ">
                                     <div class="flex justify-between items-center">
-                                        <img src="assets/images/landCare/landCare-logo.svg" alt="" class="w-16">
+                                        <img src="assets/images/landCare/landCare-logo.svg" alt="landCare-logo" class="w-16">
                                         <div class="font-bebasNeue text-lg ">Case Study</div>
                                     </div>
                                     <div>
                                         <ul class=" text-5-color font-dm_sans space-y-1.5">
                                             <li class="flex gap-1.5 ">
-                                                <div><img src="assets/images/bluetick.svg" alt="" class="w-4 mt-1">
+                                                <div><img src="assets/images/bluetick.svg" alt="bluetick" class="w-4 mt-1">
                                                 </div>
                                                 <span>Fostering thriving farms </span>
                                             </li>
                                             <li class="flex gap-1.5 ">
-                                                <div><img src="assets/images/bluetick.svg" alt="" class="w-4 mt-1"></div>
+                                                <div><img src="assets/images/bluetick.svg" alt="bluetick" class="w-4 mt-1"></div>
                                                 <span>Preserving natural resources</span>
                                             </li>
                                             <li class="flex gap-1.5 ">
-                                                <div class="mt-[2px]"><img src="assets/images/bluetick.svg" alt=""
+                                                <div class="mt-[2px]"><img src="assets/images/bluetick.svg" alt="bluetick"
                                                         class="w-4 mt-1">
                                                 </div>
                                                 <span>Nurturing strong communities</span>
@@ -271,27 +273,27 @@
                             <a href="caseStudies/peepulagri.html"
                                 class=" w-full  bg-white rounded-xl ">
                                 <div class="p-1">
-                                    <img src="assets/images/case-study/case-study-mobile/peepulagri.webp" alt=""
+                                    <img src="assets/images/case-study/case-study-mobile/peepulagri.webp" alt="peepul-agri"
                                         class="w-full">
                                 </div>
                                 <div class=" px-4">
                                     <div class="flex justify-between items-center">
-                                        <img src="assets/images/peepulagri/peopleAgri.svg" alt="" class="w-20">
+                                        <img src="assets/images/peepulagri/peopleAgri.svg" alt="peepulAgri" class="w-20">
                                         <div class="font-bebasNeue text-lg ">Case Study</div>
                                     </div>
                                     <div>
                                         <ul class=" text-5-color font-dm_sans space-y-1.5">
                                             <li class="flex gap-1.5 items-start">
-                                                <div><img src="assets/images/bluetick.svg" alt="" class="w-4 mt-2">
+                                                <div><img src="assets/images/bluetick.svg" alt="bluetick" class="w-4 mt-2">
                                                 </div>
                                                 <span>Smart robotics for farming</span>
                                             </li>
                                             <li class="flex gap-1.5 items-center">
-                                                <div><img src="assets/images/bluetick.svg" alt="" class="w-4"></div>
+                                                <div><img src="assets/images/bluetick.svg" alt="bluetick" class="w-4"></div>
                                                 <span>Precision in operations</span>
                                             </li>
                                             <li class="flex gap-1.5 items-start">
-                                                <img src="assets/images/bluetick.svg" alt="" class="w-4">
+                                                <img src="assets/images/bluetick.svg" alt="bluetick" class="w-4">
                                                 
                                                 <div>Innovative solutions for modern agriculture</div>
                                             </li>
@@ -305,23 +307,23 @@
                             <a href="caseStudies/Figlinks.html"
                                 class=" w-full  bg-white  rounded-xl ">
                                 <div class="p-1">
-                                    <img src="assets/images/case-study/case-study-mobile/figlinks.webp" alt=""
+                                    <img src="assets/images/case-study/case-study-mobile/figlinks.webp" alt="figlink-main"
                                         class="w-full">
                                 </div>
                                 <div class=" px-4 ">
                                     <div class="flex justify-between items-center">
-                                        <img src="assets/images/Figlinks/Figlinks-logo.svg" alt="" class="w-32">
+                                        <img src="assets/images/Figlinks/Figlinks-logo.svg" alt="figlinks" class="w-32">
                                         <div class="font-bebasNeue text-lg ">Case Study</div>
                                     </div>
                                     <div>
                                         <ul class=" text-5-color font-dm_sans space-y-1.5">
                                             <li class="flex gap-1.5 items-start">
-                                                <div><img src="assets/images/bluetick.svg" alt="" class="w-4 mt-1">
+                                                <div><img src="assets/images/bluetick.svg" alt="bluetick" class="w-4 mt-1">
                                                 </div>
                                                 <span>Inclusive level one <br>interviews</span>
                                             </li>
                                             <li class="flex gap-1.5 items-center">
-                                                <div><img src="assets/images/bluetick.svg" alt="" class="w-4"></div>
+                                                <div><img src="assets/images/bluetick.svg" alt="bluetick" class="w-4"></div>
                                                 <span>Fair hiring practices</span>
                                             </li>
                                             <li class="flex gap-1.5 items-start">
@@ -398,10 +400,10 @@
             <div>
                 <ul class="font-bebasNeue text-3xl 2xl:text-6xl lg:text-5xl 3xl:text-9xl text-center ">
                     <li class="py-4 lg:py-5 3xl:py-8 lg:hover:bg-19-color flex justify-center relative gap-x-6 group border-b ">
-                        <div><img src="assets/images/services/pen.svg" alt=""
+                        <div><img src="assets/images/services/pen.svg" alt="pen"
                                 class="w-32 absolute -top-[44px] left-72 hidden lg:group-hover:block "></div>
-                        <div class="fade-up">Graphic </div>
-                        <div><img src="assets/images/services/paintImage.svg" alt=""
+                        <div class="fade-up">Graphic Design </div>
+                        <div><img src="assets/images/services/paintImage.svg" alt="paint"
                                 class="w-32 absolute right-52 hidden lg:group-hover:block "></div>
                     </li>
                     <li class="py-4 lg:py-5 3xl:py-8 lg:hover:bg-19-color flex justify-center relative group border-b">
@@ -452,16 +454,16 @@
 
             <div>
                 <div class=" lg:space-y-4">
-                    <div class="flex flex-col">
-                        <div class="rounded-xl overflow-hidden hidden md:block">
-                            <video src="assets/images/web-version-new.mp4 " muted autoplay loop class="w-full object-fit"></video>
+                  
+                        <div class="rounded-xl overflow-hidden hidden md:block ">
+                            <video src="assets/images/web-version-new.mp4 " muted autoplay loop class=" object-cover"></video>
                         </div>
                         <div class="rounded-xl overflow-hidden  md:hidden">
                             <video src="assets/images/mobile-version-new.mp4 " muted autoplay loop
                                 class="w-full"></video>
                         </div>
 
-                    </div>
+                   
 
 
                 </div>
@@ -513,7 +515,7 @@
                                     </div>
                                     <div class="justify-self-end self-end hidden md:block">
                                         <img src="assets/images/drivingthroughsuccessculture/1..svg" alt=""
-                                            class="w-20 3xl:w-28">
+                                            class="w-20 md:w-16 3xl:w-28">
                                     </div>
                                 </div>
                                 <div class="md:grid md:grid-cols-2 bg-6-color rounded-2xl p-4 lg:p-4 stats">
@@ -526,7 +528,7 @@
                                     </div>
                                     <div class="justify-self-end self-end hidden md:block">
                                         <img src="assets/images/drivingthroughsuccessculture/2.svg" alt=""
-                                            class="w-20 3xl:w-28">
+                                            class="w-20 md:w-16 3xl:w-28">
                                     </div>
                                 </div>
                                 <div class="md:grid md:grid-cols-2 bg-6-color rounded-2xl p-4 lg:p-4 stats">
@@ -538,7 +540,7 @@
                                     </div>
                                     <div class="justify-self-end self-end hidden md:block">
                                         <img src="assets/images/drivingthroughsuccessculture/3.svg" alt=""
-                                            class="w-20 3xl:w-28">
+                                            class="w-20 md:w-16 3xl:w-28">
                                     </div>
                                 </div>
                                 <div class="md:grid md:grid-cols-2 bg-6-color rounded-2xl p-4 lg:p-4 stats">
@@ -548,22 +550,22 @@
                                     </div>
                                     <div class="justify-self-end self-end hidden md:block">
                                         <img src="assets/images/drivingthroughsuccessculture/4.svg" alt=""
-                                            class="w-20 3xl:w-28">
+                                            class="w-20 md:w-16 3xl:w-28">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="hidden lg:block  justify-center justify-self-end px-7">
+                    <div class="hidden lg:block lg:self-end xl:self-start   justify-self-end px-7">
                       <div></div>
 
-                        <img src="assets/images/StatsImage.svg" alt="" class="w-[550px] 3xl:w-[800px] innovate">
+                        <img src="assets/images/StatsImage.svg" alt="" class="xl:w-[550px] h-full lg:w-[400px] 3xl:w-[800px] innovate">
                     </div>
 
                 </div>
             </div>
             <div class="mt-10 flex overflow-hidden">
-                <div class="flex animate-loop-scroll w-[98vw]">
+                <div class="flex animate-loop-scroll ">
                     <div class="flex justify-center items-center border w-[45vw] lg:w-[14vw] px-6">
                         <!--uber-->
                         <svg class="h-3 w-20 lg:w-[120px] lg:h-[18px]" height="18" width="120"
@@ -808,7 +810,7 @@
                     </div>
                     <div class="flex justify-center items-center border w-[45vw] lg:w-[14vw] px-6">
                         <!--new balance-->
-                        <svg class="h-7 w-16" width="73" height="42" viewBox="0 0 73 42" fill="none"
+                        <svg class="h-7 w-16 lg:w-[73px] lg:h-[42px]" width="73" height="42" viewBox="0 0 73 42" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_232_220)">
                                 <g clip-path="url(#clip1_232_220)">

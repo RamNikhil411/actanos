@@ -58,16 +58,25 @@ function scrollTracker() {
 
   sections.forEach((section) => {
     const sectionHeight = section.offsetHeight;
-    const sectionTop = section.offsetTop - 100;
+    const sectionTop = section.offsetTop - 80;
     const id = section.getAttribute("id");
     const currentNavLink = document.querySelector(`.navlinks a[href*="#${id}"]`);
     if (
       currentYScroll > sectionTop &&
       currentYScroll <= sectionTop + sectionHeight
     ) {
-      currentNavLink.classList.add("text-[#D8D8D8]");
-    } else {
-      currentNavLink.classList.remove("text-[#D8D8D8]");
+       if(screen.width < 1024){
+        currentNavLink.classList.add("mobile-active")
+        currentNavLink.classList.add("underline","decoration-blue-900","underline-offset-4")
+       }
+       else{
+        currentNavLink.classList.add("web-active")
+       }
+    }
+    else {
+      currentNavLink.classList.remove("mobile-active");
+      currentNavLink.classList.remove("web-active");
+      currentNavLink.classList.remove("underline","decoration-blue-900","underline-offset-4")
     }
   });
 }

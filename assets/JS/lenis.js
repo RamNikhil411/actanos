@@ -292,6 +292,161 @@ gsap.fromTo(".rocket",{
   }
 })
 
+gsap.fromTo(".test-content",{
+
+  
+  opacity:0
+},{
+
+  opacity:1,
+  scrollTrigger: {
+    trigger: ".test-content",
+    start: "top 90%",
+    end: "bottom center",
+    scrub: true,
+    toggleActions:"play complete restart none"
+  }
+})
+
+gsap.fromTo(".testimonals",{
+
+  
+  opacity:0
+},{
+
+  opacity:1,
+  scrollTrigger: {
+    trigger: ".testimonals",
+    start: "top 90%",
+    end: "bottom center",
+    scrub: true,
+    toggleActions:"play complete restart none"
+  }
+})
+
+gsap.fromTo(".test-author",{
+
+  
+  opacity:0
+},{
+
+  opacity:1,
+  scrollTrigger: {
+    trigger: ".test-author",
+    start: "top 90%",
+    end: "bottom center",
+    scrub: true,
+    toggleActions:"play complete restart none"
+  }
+})
+
+gsap.fromTo(".test-prev",{
+
+  x:-100,
+  opacity:0
+},{
+  x:0,
+  opacity:0.5,
+  scrollTrigger: {
+    trigger: ".testimonals",
+    start: "top 90%",
+    end: "bottom center",
+    scrub: true,
+    toggleActions:"play complete restart none"
+  }
+})
+
+gsap.fromTo(".test-next",{
+
+  x:100,
+  opacity:0
+},{
+   x:0,
+  opacity:1,
+  scrollTrigger: {
+    trigger: ".testimonals",
+    start: "top 90%",
+    end: "bottom center",
+    scrub: true,
+    toggleActions:"play complete restart none"
+  }
+})
+
+gsap.fromTo(".case-head",{
+
+  y:100,
+  opacity:0
+},{
+   y:0,
+  opacity:1,
+  scrollTrigger: {
+    trigger: ".case-head",
+    start: "top 90%",
+    end: "bottom center",
+    scrub: true,
+    toggleActions:"play complete restart none"
+  }
+})
+
+gsap.fromTo(".case-content",{
+
+  y:100,
+  opacity:0
+},{
+   y:0,
+  opacity:1,
+  scrollTrigger: {
+    trigger: ".case-head",
+    start: "top 90%",
+    end: "bottom center",
+    scrub: true,
+    toggleActions:"play complete restart none"
+  }
+})
+
+gsap.fromTo(".case-img",{
+
+  
+  scale:0
+},{
+   y:0,
+  scale:1,
+  scrollTrigger: {
+    trigger: ".case-img",
+    start: "top 90%",
+    end: "bottom center",
+    scrub: true,
+    toggleActions:"play complete restart none"
+  }
+})
+
+gsap.fromTo(".card",{
+
+  y:100,
+  opacity:0.5
+},{
+   y:0,
+   opacity:1,
+  scrollTrigger: {
+    trigger: ".card",
+    start: "top 90%",
+    end: "bottom center",
+    scrub: true,
+    toggleActions:"play complete restart none"
+  }
+})
+
+gsap.from('.design', {
+  y: 100,
+  stagger: 0.1 
+})
+
+
+
+
+
+
+
 
 
 

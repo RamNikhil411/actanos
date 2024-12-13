@@ -36,5 +36,14 @@
     outline-offset: 3px;
 }
 
+.gallery-section .index{
+    color: #fff;
+
+}
+
+.card1 {
+    will-change: transform;
+  }
+
 
 

@@ -58,6 +58,7 @@ var swiper =new Swiper(".mySwiper",{
   });
   var swiper2 = new Swiper(".gallery", {
     spaceBetween: 10,
+    mousewheel: true,
     navigation: {
       nextEl: ".next",
       prevEl: ".prev",
@@ -81,7 +82,7 @@ var swiper =new Swiper(".mySwiper",{
   });
   var swiper2 = new Swiper(".land-gallery", {
     spaceBetween: 10,
-    mousewheel:true,
+    mousewheel: true,
     navigation: {
       nextEl: ".next",
       prevEl: ".prev",

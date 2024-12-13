@@ -1,6 +1,7 @@
 gsap.from('.card1',{
     x:0,
     rotation:0,
+   
     duration:2,
     
 }
@@ -9,6 +10,7 @@ gsap.from('.card1',{
 gsap.from('.card2',{
     x:0,
     rotation:0,
+   
     duration:2,
     
 }
@@ -24,7 +26,12 @@ gsap.from('.card3',{
 gsap.from('.card4',{
     x:0,
     rotation:0,
+    
     duration:2,
     
 }
 )
+
+// Wait for the DOM to be ready
+
+  

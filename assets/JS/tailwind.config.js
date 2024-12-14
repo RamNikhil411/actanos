@@ -46,7 +46,8 @@ tailwind.config={
                 '22-color':'#E0E0E0'
             },
             screens:{
-                '3xl':'2560px'
+                '3xl':'2560px',
+                '1920':'1920px'
             }
 
             

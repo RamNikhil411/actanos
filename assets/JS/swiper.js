@@ -1,4 +1,4 @@
-var swiper =new Swiper(".mySwiper",{
+var test =new Swiper(".mySwiper",{
     navigation:{
         nextEl:".next-button",
         prevEl:".prev-button"
@@ -6,7 +6,7 @@ var swiper =new Swiper(".mySwiper",{
     
 })
 
-  var swiper = new Swiper(".LatestCases",{
+  var latest_cases = new Swiper(".LatestCases",{
     slidesPerView: 1,
     spaceBetween: 10,
     
@@ -37,7 +37,7 @@ var swiper =new Swiper(".mySwiper",{
     }
   })
 ///mobile
-  var swiper = new Swiper(".myCards", {
+  var cards = new Swiper(".myCards", {
     effect: "cards",
     grabCursor: true,
     slideShadows:false,
@@ -50,13 +50,13 @@ var swiper =new Swiper(".mySwiper",{
 
   
   //gallery
-  var swiper = new Swiper(".thumbs", {
+  var gallery_thumbs = new Swiper(".thumbs", {
     spaceBetween: 15,
     slidesPerView: 7,
     freeMode: true,
     watchSlidesProgress: true,
   });
-  var swiper2 = new Swiper(".gallery", {
+  var gallery_main = new Swiper(".gallery", {
     spaceBetween: 10,
     mousewheel: true,
     navigation: {
@@ -69,18 +69,23 @@ var swiper =new Swiper(".mySwiper",{
 
     },
     thumbs: {
-      swiper: swiper,
+      swiper: gallery_thumbs,
     },
   });
 
-  var swiper = new Swiper(".land-thumbs", {
+  const image_3 = document.querySelector(".image-3")
+image_3.addEventListener("click",()=>{
+  gallery_main.slideTO(3)
+})
+
+  var landcare_thumbs = new Swiper(".land-thumbs", {
     spaceBetween: 15,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
     
   });
-  var swiper2 = new Swiper(".land-gallery", {
+  var landcare_main = new Swiper(".land-gallery", {
     spaceBetween: 10,
     mousewheel: true,
     navigation: {
@@ -96,3 +101,4 @@ var swiper =new Swiper(".mySwiper",{
 
     },
   });
+

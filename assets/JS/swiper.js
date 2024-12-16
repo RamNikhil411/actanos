@@ -73,10 +73,27 @@ var test =new Swiper(".mySwiper",{
     },
   });
 
-  const image_3 = document.querySelector(".image-3")
-image_3.addEventListener("click",()=>{
-  gallery_main.slideTO(3)
-})
+  document.querySelectorAll('.moregallery img').forEach(image => {
+    image.addEventListener('click', () => {
+      const slideIndex = image.dataset.slideIndex;
+  
+      // Show the Swiper slider
+      document.querySelector('.gallery-section').classList.remove('hidden');
+  
+      // Set the initial slide
+      gallery_main.slideTo(slideIndex - 1);
+    });
+  });
+   let gallery = document.querySelector('.gallery-section')
+  let close_btn=document.querySelector('.close-btn')
+
+  close_btn.addEventListener("click",()=>{
+     gallery.classList.add('hidden')
+     document.body.style.overflow="none"
+ 
+  })
+
+
 
   var landcare_thumbs = new Swiper(".land-thumbs", {
     spaceBetween: 15,
@@ -93,12 +110,24 @@ image_3.addEventListener("click",()=>{
       prevEl: ".prev",
     },
     thumbs: {
-      swiper: swiper,
+      swiper: landcare_thumbs,
     },
     pagination:{
       el:".index",
       type:"fraction"
 
     },
+  });
+
+  document.querySelectorAll('.landgallery img').forEach(image => {
+    image.addEventListener('click', () => {
+      const slideIndex = image.dataset.slideIndex;
+  
+      // Show the Swiper slider
+      document.querySelector('.gallery-section').classList.remove('hidden');
+  
+      // Set the initial slide
+      landcare_main.slideTo(slideIndex - 1);
+    });
   });
 

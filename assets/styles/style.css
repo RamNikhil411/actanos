@@ -29,11 +29,11 @@
     border-radius:0px;
 }
 
-.swiper-slide-thumb-active{
-    outline-width: medium;
-    outline-style: solid;
-    outline-color: white;
-    outline-offset: 3px;
+.swiper-slide-thumb-active  img{
+    border: 2px solid #e94546;
+  
+  
+
 }
 
 .gallery-section .index{

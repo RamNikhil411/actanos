@@ -74,9 +74,15 @@ function scrollTracker() {
        }
     }
     else {
+      if(screen.width < 1024){
+        currentNavLink.classList.remove("underline","decoration-blue-900","underline-offset-4")
+
+      }
+      else{
+        currentNavLink.classList.remove("web-active");
       
-      currentNavLink.classList.remove("web-active");
-      currentNavLink.classList.remove("underline","decoration-blue-900","underline-offset-4")
+      }
+      
     }
   });
 }

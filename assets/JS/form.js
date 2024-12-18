@@ -19,12 +19,12 @@ if ($("#contactForm").length) {
                 },
                 formData: {
                     form_title: "on Media page",
-                    website_title: "Untitled Design",
-                    website_url: "https://untitleddesign.com/",
+                    website_title: "Home page",
+                    website_url: "https://actanos.vercel.app",
                 },
                 emailSubject: "Lead from Media",
                 successResponse:
-                    "Thank You, We will get back to you at the earliest",
+                    "Speak Soon! we've recieved your request and will reach you soon",
                 errorResponse:
                     "Sorry! Unable to send your Message Now. Please try again",
                 apiUrl: "https://z7inja5y3g.execute-api.ap-south-1.amazonaws.com/dev/notifications/email",

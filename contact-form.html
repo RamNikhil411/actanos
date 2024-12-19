@@ -97,23 +97,23 @@
             </button>
         </div>
     </header>
-    <section id="contactForm" class="contact-form overflow-x-hidden mt-[100px]">
+    <section id="contactForm" class="contact-form overflow-x-hidden mt-[100px] 3xl:mt-[200px]">
         <div class="px-3 md:px-6 lg:px-8 xl:px-10 2xl:px-12 space-y-10 ">
 
             <div class=" grid md:grid-cols-[60%_40%] gap-10 md:gap-4">
                 <div class="">
-                    <div class="text-5xl font-bebasNeue">
+                    <div class="text-5xl 3xl:text-7xl font-bebasNeue">
                         LET'S TALK!
                     </div>
                     <form @submit.prevent="ContactForm" class="pt-10">
-                        <div id="contactform" class="space-y-8 w-fit">
+                        <div id="contactform" class="space-y-8 3xl:space-y-16 w-fit">
                             <div class="space-y-1">
-                                <div class="flex gap-x-12 lg:gap-x-20 items-center">
-                                    <label for="name" class="font-bebasNeue text-xl lg:text-3xl grow-0">NAME</label>
+                                <div class="flex gap-x-12 lg:gap-x-20 3xl:gap-36 items-center">
+                                    <label for="name" class="font-bebasNeue text-xl 3xl:text-5xl lg:text-3xl grow-0">NAME</label>
 
                                     <input type="text" v-model="leadData.name" v-validate="'required|alpha_spaces'"
                                         id="name" name="name"
-                                        class="text-base lg:text-xl border-b border-black border-opacity-40 w-[200px] md:w-[200px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]">
+                                        class="text-base lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[200px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]">
 
                                 </div>
                                 <div class="text-red-700 text-sm font-dm_sans">
@@ -123,14 +123,14 @@
                                 </div>
                             </div>
                             <div  class="space-y-1">
-                                <div class="flex gap-x-12 lg:gap-x-20 items-center">
-                                    <label for="email" class="font-bebasNeue text-xl lg:text-3xl">EMAIL</label>
+                                <div class="flex gap-x-12 lg:gap-x-20 3xl:gap-36 items-center">
+                                    <label for="email" class="font-bebasNeue text-xl lg:text-3xl 3xl:text-5xl">EMAIL</label>
 
 
 
                                     <input type="email" v-model="leadData.email" v-validate="'required|email'"
                                         id="email" name="email"
-                                        class="lg:text-xl border-b border-black border-opacity-40 w-[200px] md:w-[200px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]">
+                                        class="lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[200px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]">
 
                                 </div>
                                 <div class="text-red-700 text-sm font-dm_sans">
@@ -140,12 +140,12 @@
                                 </div>
                             </div>
                             <div  class="space-y-1">
-                                <div class="flex gap-x-12 lg:gap-x-20 items-center">
-                                    <label for="phone" class="font-bebasNeue text-xl lg:text-3xl">Phone</label>
+                                <div class="flex gap-x-12 lg:gap-x-20 3xl:gap-36 items-center">
+                                    <label for="phone" class="font-bebasNeue text-xl lg:text-3xl 3xl:text-5xl">Phone</label>
 
                                     <input type="text" id="phone" name="phone" v-model="leadData.phone"
                                         v-validate="'required'"
-                                        class="lg:text-xl border-b border-black border-opacity-40 w-[200px] md:w-[200px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]">
+                                        class="lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[200px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]">
 
                                 </div>
                                 <div class="text-red-700 text-sm font-dm_sans">
@@ -155,11 +155,11 @@
                                 </div>
                             </div>
                             <div  class="space-y-1">
-                                <div class="flex gap-x-2 lg:gap-x-6 items-start">
-                                    <label for="message" class="font-bebasNeue text-xl lg:text-3xl">Description</label>
+                                <div class="flex gap-x-2 lg:gap-x-6 3xl:gap-12 items-start">
+                                    <label for="message" class="font-bebasNeue text-xl lg:text-3xl 3xl:text-5xl">Description</label>
 
                                     <textarea name="message" v-model="leadData.message" v-validate="''" id="message"
-                                        class="border border-black border-opacity-40 lg:text-xl  w-[200px] h-[80px] md:w-[200px] md:h-[100px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]"></textarea>
+                                        class="border border-black border-opacity-40 lg:text-xl 3xl:text-3xl  w-[200px] h-[80px] md:w-[200px] md:h-[100px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]"></textarea>
 
                                 </div>
                                 <div class="text-red-700 text-sm font-dm_sans">
@@ -174,7 +174,7 @@
 
                             <div class="mt-10 flex justify-center items-center">
                                 <button type="submit"
-                                    class="font-bebasNeue text-xl lg:text-3xl text-white bg-black px-10 hover:bg-white hover:text-black shadow-md transition-all duration-500 rounded-md py-2 hover:border hover:border-black"><span>SEND</span></button>
+                                    class="font-bebasNeue text-xl lg:text-3xl 3xl:text-5xl text-white bg-black px-10 hover:bg-white hover:text-black shadow-md transition-all duration-500 rounded-md py-2 hover:border hover:border-black"><span>SEND</span></button>
                             </div>
 
                         </div>
@@ -190,11 +190,11 @@
                 </div>
               
                 <div class="justify-self-start md:justify-self-end  self-end order-first md:order-last ">
-                    <img src="assets/images/mail.svg" alt="" class="w-56 lg:w-72 xl:w-96 hidden md:block">
+                    <img src="assets/images/mail.svg" alt="" class="w-56 lg:w-72 xl:w-96 3xl:w-[500px] hidden md:block">
                     <div class="font-dm_sans flex flex-col gap-2 mt-5 justify-end">
                         <a href="mailto:contact@actanos.com"
-                            class="text-xl underline text-red-700 font-medium">contact@actanos.com</a>
-                        <a href="tel:+919885056898" class="text-xl font-medium">+91 9885056898</a>
+                            class="text-xl underline text-red-700  3xl:text-3xl font-medium">contact@actanos.com</a>
+                        <a href="tel:+919885056898" class="text-xl 3xl:text-3xl font-medium">+91 9885056898</a>
                     </div>
 
 

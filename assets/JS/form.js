@@ -1,5 +1,35 @@
 if ($("#contactForm").length) {
     Vue.use(VeeValidate);
+
+    VeeValidate.Validator.extend("phone", {
+        getMessage: (field, args, data) => {
+            if (data === "alpha") {
+                return "Phone number must contain only digits.";
+            }
+            if (data === "length") {
+                return "Phone number must be at least 10 digits long.";
+            }
+            return "Invalid phone number.";
+        },
+        validate: (value) => {
+            if (/[^0-9]/.test(value)) {
+                return {
+                    valid: false,
+                    data: "alpha", // Error type for non-numeric input
+                };
+            }
+            if (value.length < 10) {
+                return {
+                    valid: false,
+                    data: "length", // Error type for insufficient length
+                };
+            }
+            return {
+                valid: true,
+            };
+        },
+    });
+    
     new Vue({
         el: "#contactForm",
         data() {

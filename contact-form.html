@@ -97,10 +97,10 @@
             </button></a>
         </div>
     </header>
-    <section id="contactForm" class="contact-form overflow-x-hidden mt-[100px] 3xl:mt-[200px]">
-        <div class="px-3 md:px-6 lg:px-8 xl:px-10 2xl:px-12 space-y-10 ">
+    <section id="contactForm" class="contact-form overflow-x-hidden mt-28 3xl:mt-[200px]">
+        <div class="px-3 md:px-8 lg:px-10 xl:px-12 3xl:px-24 space-y-10 ">
 
-            <div class=" grid md:grid-cols-[60%_40%] gap-10 md:gap-4">
+            <div class=" grid md:grid-cols-[70%_30%] gap-y-6 md:gap-3">
                 <div class="">
                     <div class="text-5xl 3xl:text-7xl font-bebasNeue">
                         LET'S TALK!
@@ -110,69 +110,75 @@
                             <div class="space-y-1">
                                 <div class="flex gap-x-12 lg:gap-x-20 3xl:gap-36 items-center">
                                     <label for="name" class="font-bebasNeue text-xl 3xl:text-5xl lg:text-3xl grow-0">NAME</label>
-
-                                    <input type="text" v-model="leadData.name" v-validate="'required|alpha_spaces'"
+                                 <div>
+                                    <input type="text" v-model="leadData.name" v-validate="'required|alpha_spaces'" placeholder=""
                                         id="name" name="name"
-                                        class="text-base lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[200px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]">
-
+                                        class="text-base lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] 3xl:w-[1000px] focus:outline-none focus:border-[#ff0507]">
+                                        <div class="text-red-700 text-sm  3xl:text-xl font-dm_sans error hidden">
+                                            <div v-if="submitted && errors.has('name') && !showSuccess" class="invalid">
+                                                {{ errors.first("name") }}
+                                            </div>
+                                        </div>
+                                 </div>
                                 </div>
-                                <div class="text-red-700 text-sm font-dm_sans">
-                                    <div v-if="submitted && errors.has('name') && !showSuccess" class="invalid">
-                                        {{ errors.first("name") }}
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div  class="space-y-1">
                                 <div class="flex gap-x-12 lg:gap-x-20 3xl:gap-36 items-center">
                                     <label for="email" class="font-bebasNeue text-xl lg:text-3xl 3xl:text-5xl">EMAIL</label>
 
 
-
+                                  <div class="space-y-1">
                                     <input type="email" v-model="leadData.email" v-validate="'required|email'"
                                         id="email" name="email"
-                                        class="lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[200px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]">
-
+                                        class="lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] 3xl:w-[1000px] focus:outline-none focus:border-[#ff0507]">
+                                        <div class="text-red-700 text-sm 3xl:text-xl font-dm_sans error hidden">
+                                            <div v-if="submitted && errors.has('email') && !showSuccess" class="invalid">
+                                                {{ errors.first("email") }}
+                                            </div>
+                                        </div>
+                                  </div>
                                 </div>
-                                <div class="text-red-700 text-sm font-dm_sans">
-                                    <div v-if="submitted && errors.has('name') && !showSuccess" class="invalid">
-                                        {{ errors.first("email") }}
-                                    </div>
-                                </div>
+                              
                             </div>
                             <div  class="space-y-1">
                                 <div class="flex gap-x-12 lg:gap-x-20 3xl:gap-36 items-center">
                                     <label for="phone" class="font-bebasNeue text-xl lg:text-3xl 3xl:text-5xl">Phone</label>
-
+                                  <div>
                                     <input type="text" id="phone" name="phone" v-model="leadData.phone"
-                                        v-validate="'required'"
-                                        class="lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[200px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]">
+                                        v-validate="'required|phone'"
+                                        class="lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] 3xl:w-[1000px] focus:outline-none focus:border-[#ff0507]">
+                                        <div class="text-red-700 text-sm 3xl:text-xl font-dm_sans error hidden">
+                                            <div v-if="submitted && errors.has('phone') && !showSuccess" class="invalid">
+                                                {{ errors.first("phone") }}
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
-                                <div class="text-red-700 text-sm font-dm_sans">
-                                    <div v-if="submitted && errors.has('name') && !showSuccess" class="invalid">
-                                        {{ errors.first("phone") }}
-                                    </div>
-                                </div>
+                              
                             </div>
                             <div  class="space-y-1">
-                                <div class="flex gap-x-2 lg:gap-x-6 3xl:gap-12 items-start">
-                                    <label for="message" class="font-bebasNeue text-xl lg:text-3xl 3xl:text-5xl">Description</label>
-
+                                <div class="flex flex-col gap-y-4 lg:gap-x-6 3xl:gap-12 items-start">
+                                    <label for="message" class="font-bebasNeue text-xl lg:text-3xl 3xl:text-5xl">Describe Your project</label>
+                                  <div>
                                     <textarea name="message" v-model="leadData.message" v-validate="''" id="message"
-                                        class="border border-black border-opacity-40 lg:text-xl 3xl:text-3xl  w-[200px] h-[80px] md:w-[200px] md:h-[100px] lg:w-[300px] xl:w-[500px] focus:outline-none focus:border-[#ff0507]"></textarea>
+                                        class="bg-[#ECECEC] p-4 resize-none lg:text-xl 3xl:text-3xl  w-[300px] h-[150px] md:w-[400px] md:h-[200px] lg:w-[500px] xl:w-[650px] xl:h-[200px] 2xl:w-[850px] 2xl:h-[250px] 3xl:h-[500px] 3xl:w-[1300px] focus:outline-none focus:border-[#ff0507]"></textarea>
+                                        <div class="text-red-700 text-sm 3xl:text-xl font-dm_sans error hidden">
+                                            <div v-if="submitted && errors.has('message') && !showSuccess" class="invalid">
+                                                {{ errors.first("message") }}
+                                            </div>
+                                        </div>
+                                  </div>
 
                                 </div>
-                                <div class="text-red-700 text-sm font-dm_sans">
-                                    <div v-if="submitted && errors.has('name') && !showSuccess" class="invalid">
-                                        {{ errors.first("message") }}
-                                    </div>
-                                </div>
+                              
 
                             </div>
 
 
 
-                            <div class="mt-10 flex justify-center items-center">
+                            <div class="mt-10 flex items-center justify-end">
                                 <button type="submit"
                                     class="font-bebasNeue text-xl lg:text-3xl 3xl:text-5xl text-white bg-black px-10 hover:bg-white hover:text-black shadow-md transition-all duration-500 rounded-md py-2 hover:border hover:border-black"><span>SEND</span></button>
                             </div>
@@ -181,20 +187,24 @@
 
 
                     </form>
-                    <div v-if="submitted && showSuccess" class="success text-green-600 font-dm_sans" id="suceess-message">
+                    <div class="success text-green-600 font-dm_sans error hidden ">
+                    <div v-if="submitted && showSuccess "  id="suceess-message">
                         {{ successResponse }}
                     </div>
-                    <div v-if="submitted && showError" class="error text-red-700 font-dm_sans">
+                    </div>
+                    <div class=" text-red-700 font-dm_sans error hidden ">
+                    <div v-if="submitted && showError" >
                         {{ errorResponse }}
+                    </div>
                     </div>
                 </div>
               
-                <div class="justify-self-start md:justify-self-end  self-end order-first md:order-last ">
-                    <img src="assets/images/mail.svg" alt="" class="w-56 lg:w-72 xl:w-96 3xl:w-[500px] hidden md:block">
-                    <div class="font-dm_sans flex flex-col gap-2 mt-5 justify-end">
+                <div class=" xl:px-10  ">
+                    <img src="assets/images/mail.svg" alt="" class="w-44 lg:w-72 xl:w-64 3xl:w-[500px] hidden md:block">
+                    <div class="font-dm_sans flex flex-col gap-2 xl:mt-32 justify-end md:mt-32">
                         <a href="mailto:contact@actanos.com"
-                            class="text-xl underline text-red-700  3xl:text-3xl font-medium">contact@actanos.com</a>
-                        <a href="tel:+919885056898" class="text-xl 3xl:text-3xl font-medium">+91 9885056898</a>
+                            class="text-xl underline text-[#0873ba] 3xl:text-3xl font-medium font-dm_sans">contact@actanos.com</a>
+                        <a href="tel:+919885056898" class="text-xl 3xl:text-3xl font-medium font-dm_sans"><span class="font-bold">+91 </span>9885056898</a>
                     </div>
 
 
@@ -212,14 +222,15 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
     <script src="assets/JS/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js"></script>
     <script src="assets/JS/vue.js"></script>
 
     <script src="assets/JS/vee-validate.js"></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js
-"></script>
+    
 
     <script src="assets/JS/form.js"></script>
+    <script src="assets/JS/handlingerror.js"></script>
+    <script src="assets/JS/phone.js"></script>
 </body>
 
 </html>

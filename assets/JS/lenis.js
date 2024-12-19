@@ -381,6 +381,7 @@ gsap.fromTo(".case-head",{
 },{
    y:0,
   opacity:1,
+  duration:2,
   scrollTrigger: {
     trigger: ".latest",
     start: "top 90%",
@@ -397,6 +398,7 @@ gsap.fromTo(".case-content",{
 },{
    y:0,
   opacity:1,
+  duration:2,
   scrollTrigger: {
     trigger: ".latest",
     start: "top 90%",

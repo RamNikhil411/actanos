@@ -9,6 +9,7 @@ var test =new Swiper(".mySwiper",{
   var latest_cases = new Swiper(".LatestCases",{
     slidesPerView: 1,
     spaceBetween: 10,
+    loop:true,
     
     autoplay:{
         delay:3000,

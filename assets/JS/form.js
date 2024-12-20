@@ -9,6 +9,9 @@ if ($("#contactForm").length) {
             if (data === "length") {
                 return "Phone number must be at least 10 digits long.";
             }
+            if (data === "morelength"){
+                return "phone number should only 10 digits.";
+            }
             return "Invalid phone number.";
         },
         validate: (value) => {
@@ -23,6 +26,12 @@ if ($("#contactForm").length) {
                     valid: false,
                     data: "length", // Error type for insufficient length
                 };
+            }
+            if (value.length > 10){
+                return {
+                    valid: false,
+                    data: "morelength",
+                }
             }
             return {
                 valid: true,

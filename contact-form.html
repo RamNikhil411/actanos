@@ -113,7 +113,7 @@
                                  <div>
                                     <input type="text" v-model="leadData.name" v-validate="'required|alpha_spaces'" placeholder=""
                                         id="name" name="name"
-                                        class="text-base lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] 3xl:w-[1000px] focus:outline-none focus:border-[#ff0507]">
+                                        class="text-base lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[250px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] 3xl:w-[1000px] focus:outline-none focus:border-[#ff0507]">
                                         <div class="text-red-700 text-sm  3xl:text-xl font-dm_sans error hidden">
                                             <div v-if="submitted && errors.has('name') && !showSuccess" class="invalid">
                                                 {{ errors.first("name") }}
@@ -131,7 +131,7 @@
                                   <div class="space-y-1">
                                     <input type="email" v-model="leadData.email" v-validate="'required|email'"
                                         id="email" name="email"
-                                        class="lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] 3xl:w-[1000px] focus:outline-none focus:border-[#ff0507]">
+                                        class="lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[250px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] 3xl:w-[1000px] focus:outline-none focus:border-[#ff0507]">
                                         <div class="text-red-700 text-sm 3xl:text-xl font-dm_sans error hidden">
                                             <div v-if="submitted && errors.has('email') && !showSuccess" class="invalid">
                                                 {{ errors.first("email") }}
@@ -147,7 +147,7 @@
                                   <div>
                                     <input type="text" id="phone" name="phone" v-model="leadData.phone"
                                         v-validate="'required|phone'"
-                                        class="lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[200px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] 3xl:w-[1000px] focus:outline-none focus:border-[#ff0507]">
+                                        class="lg:text-xl 3xl:text-3xl border-b border-black border-opacity-40 w-[250px] md:w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[700px] 3xl:w-[1000px] focus:outline-none focus:border-[#ff0507]">
                                         <div class="text-red-700 text-sm 3xl:text-xl font-dm_sans error hidden">
                                             <div v-if="submitted && errors.has('phone') && !showSuccess" class="invalid">
                                                 {{ errors.first("phone") }}
@@ -163,7 +163,7 @@
                                     <label for="message" class="font-bebasNeue text-xl lg:text-3xl 3xl:text-5xl">Describe Your project</label>
                                   <div>
                                     <textarea name="message" v-model="leadData.message" v-validate="''" id="message"
-                                        class="bg-[#ECECEC] p-4 resize-none lg:text-xl 3xl:text-3xl  w-[300px] h-[150px] md:w-[400px] md:h-[200px] lg:w-[500px] xl:w-[650px] xl:h-[200px] 2xl:w-[850px] 2xl:h-[250px] 3xl:h-[500px] 3xl:w-[1300px] focus:outline-none focus:border-[#ff0507]"></textarea>
+                                        class="bg-[#ECECEC] p-4 resize-none lg:text-xl 3xl:text-3xl  w-[350px] h-[150px] md:w-[400px] md:h-[200px] lg:w-[500px] xl:w-[650px] xl:h-[200px] 2xl:w-[850px] 2xl:h-[250px] 3xl:h-[500px] 3xl:w-[1300px] focus:outline-none focus:border-[#ff0507]"></textarea>
                                         <div class="text-red-700 text-sm 3xl:text-xl font-dm_sans error hidden">
                                             <div v-if="submitted && errors.has('message') && !showSuccess" class="invalid">
                                                 {{ errors.first("message") }}

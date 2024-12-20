@@ -44,15 +44,15 @@ if ($("#contactForm").length) {
                     message: "",
                 },
                 ownerData: {
-                    email: "ramnikhil312@gmail.com",
-                    name: "Untitled Design",
+                    email: "suraj.b@orotron.com, pavani.b@orotron.com", 
+                    name: "Actanos",
                 },
                 formData: {
-                    form_title: "on Media page",
-                    website_title: "Home page",
+                    form_title: "on Contact Page",
+                    website_title: "Actanos",
                     website_url: "https://actanos.vercel.app",
                 },
-                emailSubject: "Lead from Media",
+                emailSubject: "New Project",
                 successResponse:
                     "Thank You, We will get back to you at the earliest",
                 errorResponse:
@@ -87,7 +87,7 @@ if ($("#contactForm").length) {
                         this.leadData.name = "";
                         this.leadData.email = "";
                         this.leadData.phone = "";
-                        this.leadData.company = "";
+                        
                         this.leadData.message = "";
                     } else {
                         this.showError = true;

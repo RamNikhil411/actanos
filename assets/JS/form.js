@@ -2,7 +2,7 @@ if ($("#contactForm").length) {
     Vue.use(VeeValidate);
 
     VeeValidate.Validator.extend("phone", {
-        getMessage: (field, args, data) => {
+        getMessage: (field,data) => {
             if (data === "alpha") {
                 return "Phone number must contain only digits.";
             }

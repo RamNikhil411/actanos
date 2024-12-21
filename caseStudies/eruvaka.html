@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -112,7 +112,7 @@
         <div class="px-1 md:px-8 lg:px-10 xl:px-12 3xl:px-24 relative">
 
             <div class="lg:grid lg:grid-cols-2 " id="vertical">
-                <div  class=" aside h-auto lg:h-[88vh]  lg:overflow-auto  lg:border-r">
+                <div  class=" aside h-auto lg:h-[88vh]  lg:overflow-y-scroll  lg:border-r lenis-wrapper">
 
                     <div class="space-y-5 3xl:space-y-8 px-4 py-8 border-b">
                         <div class="space-y-5">
@@ -159,7 +159,7 @@
                         </div>
                         <div
                             class="bg-gradient-to-r from-[#FF6C4A] from-0% via-[#FDB914] via-11.42% to-[#FFA1D8] to-24.09% bg-clip-text w-fit">
-                            <h1 class="font-bebasNeue text-2xl 3xl:text-5xl text-transparent  ">Challenges</h1>
+                            <h1 class="font-bebasNeue text-2xl 3xl:text-5xl text-transparent challenge  ">Challenges</h1>
                         </div>
                         <div>
                             <ul class="space-y-5 3xl:space-y-10">
@@ -595,7 +595,7 @@
 
         </div>
     </section>
-    <section class="bg-[url('../assets/images/Latest_cases_bg.webp')] bg-center mt-20 overflow-hidden case" id="case-study">
+    <section class="bg-[url('../assets/images/Latest_cases_bg.webp')] bg-center mt-20 overflow-hidden case">
         <div class="px-3 py-20 md:px-10 py-10 lg:px-32 lg:py-20 lg:space-y-12 space-y-4 ">
             <div class="lg:flex lg:justify-between">
                 <h1 class="text-white font-bebasNeue text-4xl  3xl:text-7xl latest">More case studies</h1>
@@ -758,12 +758,17 @@
 
 
     <script src="../assets/JS/header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
     <script src="../assets/JS/lenis2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
     <script src="../assets/JS/swiper.js"></script>
+    <script src="../assets/JS/Case-Study-animation.js"></script>
+   
     
    
    

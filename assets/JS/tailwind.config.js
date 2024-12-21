@@ -12,6 +12,7 @@ tailwind.config={
         extend:{
             animation:{
                 'loop-scroll':'loop-scroll 25s linear infinite',
+                'scaleimg':'scaleimg 1s linear 1'
                 
             },
             keyframes:{
@@ -19,6 +20,10 @@ tailwind.config={
                     from:{transform:'translateX(0)'},
                     to:{transform:'translateX(-100%)'},
                 },
+                'scaleimg':{
+                    from:{transform:"scale(2)",opacity:'0'},
+                    to:{transform:'scale(1)', opacity:'1'}
+                }
                
             },
             colors:{

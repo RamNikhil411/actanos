@@ -71,7 +71,7 @@ gsap.fromTo(".stats", {
   y: 0,
   opacity: 1,
   scrollTrigger: {
-    trigger: ".stats",
+    trigger: ".statsdiv",
     start: "top 90%",
     end: "bottom 30%",
     scrub: true,

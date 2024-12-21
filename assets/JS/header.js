@@ -66,10 +66,18 @@ function scrollTracker() {
       currentYScroll <= sectionTop + sectionHeight
     ) {
        if(screen.width < 1024){
+        if(currentNavLink.classList.contains("web-active")){
+            currentNavLink.classList.remove("web-active")
+        }
+
         
         currentNavLink.classList.add("underline","decoration-blue-900","underline-offset-4")
        }
        else{
+        if(currentNavLink.classList.contains("underline","decoration-blue-900","underline-offset-4")){
+            currentNavLink.classList.remove("underline","decoration-blue-900","underline-offset-4")
+
+        }
         currentNavLink.classList.add("web-active")
        }
     }

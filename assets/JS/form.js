@@ -91,7 +91,7 @@ if ($("#contactForm").length) {
                         this.loader = false;
                         setTimeout(function () {
                             $("#suceess-message").css("opacity", "0");
-                        }, 3000);
+                        }, 7000);
                         this.loader = false;
                         this.leadData.name = "";
                         this.leadData.email = "";

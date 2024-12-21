@@ -60,12 +60,13 @@ var test =new Swiper(".mySwiper",{
   var gallery_main = new Swiper(".gallery", {
     spaceBetween: 10,
     mousewheel: true,
+    zoom:true,
     navigation: {
       nextEl: ".next",
       prevEl: ".prev",
     },
     pagination:{
-      el:".index",
+      el:".gallery-index",
       type:"fraction"
 
     },
@@ -106,6 +107,7 @@ var test =new Swiper(".mySwiper",{
   var landcare_main = new Swiper(".land-gallery", {
     spaceBetween: 10,
     mousewheel: true,
+    zoom:true,
     navigation: {
       nextEl: ".next",
       prevEl: ".prev",
@@ -114,7 +116,7 @@ var test =new Swiper(".mySwiper",{
       swiper: landcare_thumbs,
     },
     pagination:{
-      el:".index",
+      el:".gallery-index",
       type:"fraction"
 
     },

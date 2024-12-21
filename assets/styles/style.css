@@ -6,7 +6,7 @@
 }
 
 @media only screen and (min-width:2560px) {
-    .swiper-pagination-bullet{
+  .case  .swiper-pagination-bullet{
         background-color: white;
         height: 4px;
         width: 20px;
@@ -36,7 +36,7 @@
 
 }
 
-.gallery-section .index{
+.gallery-section .gallery-index{
     color: #fff;
 
 }

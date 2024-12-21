@@ -60,35 +60,9 @@ gsap.fromTo(".fade-up", {
   }
 });
 
-gsap.fromTo(".latest", {
-  x:-100,
-  opacity: 0
-}, {
-  x:0,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".latest",
-    start: "top 80%",
-    end: "bottom 20%",
-    scrub: true,
-    toggleActions:"play complete restart none",
-  }
-});
 
-gsap.fromTo(".latest-become", {
-  x:100,
-  opacity: 0
-}, {
-  x:0,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".latest-become",
-    start: "top 80%",
-    end: "bottom 20%",
-    scrub: true,
-    toggleActions:"play complete restart none",
-  }
-});
+
+
 
 gsap.fromTo(".stats", {
   y: 100, // 
@@ -374,55 +348,11 @@ gsap.fromTo(".test-next",{
   }
 })
 
-gsap.fromTo(".case-head",{
 
-  y:100,
-  opacity:0
-},{
-   y:0,
-  opacity:1,
-  duration:2,
-  scrollTrigger: {
-    trigger: ".latest",
-    start: "top 90%",
-    end: "bottom center",
-    scrub: true,
-    toggleActions:"play complete restart none"
-  }
-})
 
-gsap.fromTo(".case-content",{
 
-  y:100,
-  opacity:0
-},{
-   y:0,
-  opacity:1,
-  duration:2,
-  scrollTrigger: {
-    trigger: ".latest",
-    start: "top 90%",
-    end: "bottom center",
-    scrub: true,
-    toggleActions:"play complete restart none"
-  }
-})
 
-gsap.fromTo(".case-img",{
 
-  
-  scale:0
-},{
-   y:0,
-  scale:1,
-  scrollTrigger: {
-    trigger: ".latest",
-    start: "top 90%",
-    end: "bottom center",
-    scrub: true,
-    toggleActions:"play complete restart none"
-  }
-})
 
 gsap.fromTo(".card",{
 

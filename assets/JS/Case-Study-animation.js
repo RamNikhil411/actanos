@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   $(".case-head").each(function (index) {
     let tl= gsap.timeline({ paused: true });
-    tl.from($(this).find(".char"), { yPercent: 100, opacity:0, duration: 0.3, delay:0.2, ease: "power1.out", stagger:{amount:0.7}})
+    tl.from($(this).find(".char"), {  opacity:0, duration: 0.3, ease: "power1.out", stagger:{amount:0.7}})
     createScrollTrigger($(this), tl);
     });
 

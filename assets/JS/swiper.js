@@ -3,6 +3,10 @@ var test =new Swiper(".mySwiper",{
         nextEl:".next-button",
         prevEl:".prev-button"
     },
+    autoplay:{
+      delay:3000,
+      disableOnInteraction:false
+  },
     
 })
 
@@ -12,7 +16,7 @@ var test =new Swiper(".mySwiper",{
     loop:true,
     
     autoplay:{
-        delay:3000,
+        delay:5000,
         disableOnInteraction:false
     },
     navigation:{

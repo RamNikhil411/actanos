@@ -152,7 +152,7 @@ gsap.fromTo(".test", {
   scrollTrigger: {
     trigger: ".test",
     start: "top 80%",
-    end: "bottom 20%",
+    end: "bottom center",
     scrub: true,
     toggleActions:"play complete restart none",
   }
@@ -327,7 +327,7 @@ gsap.fromTo(".test-prev",{
   scrollTrigger: {
     trigger: ".testimonals",
     start: "top 90%",
-    end: "bottom center",
+    end: "bottom 80%",
     scrub: true,
     toggleActions:"play complete restart none"
   }
@@ -343,7 +343,7 @@ gsap.fromTo(".test-next",{
   scrollTrigger: {
     trigger: ".testimonals",
     start: "top 90%",
-    end: "bottom center",
+    end: "bottom 80%",
     scrub: true,
     toggleActions:"play complete restart none"
   }

@@ -51,10 +51,11 @@ gsap.fromTo(".fade-up", {
 }, {
   y: 0,
   opacity: 1,
+  stagger:0.3,
   scrollTrigger: {
     trigger: ".fade-up",
     start: "top 90%",
-    end: "bottom center",
+    end: "bottom 80%",
     scrub: true,
     toggleActions:"play complete restart none"
   }

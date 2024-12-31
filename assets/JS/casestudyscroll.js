@@ -44,7 +44,7 @@ const scroll_2 = ScrollTrigger.create({
             y: diff, // Move both columns down together
             duration: 1,
             ease: 'none',
-            overwrite: 'auto' // Ensures the animation overrides any previous
+           
         });
     },
     scrub: true,

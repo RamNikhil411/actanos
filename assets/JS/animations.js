@@ -1,12 +1,13 @@
-const text = new SplitType('.text-split')
-const design = document.querySelector('.text-split')
-design.classList.remove('invisible')
-
-gsap.from(text.chars, {
-    opacity: 0,
+const words = ["Design", "Transform", "Accelerate"];
     
-    duration: 1,
-    ease:"power1.out",
-    stagger: { amount: 0.4,from:"random" },
-  })
+const spinElement = document.getElementById("spin");
+let index = 0;
 
+// Function to rotate words
+function rotateText() {
+  spinElement.textContent = words[index];
+  index = (index + 1) % words.length; // Loop to the start after the last word
+}
+
+
+setInterval(rotateText, 500);

@@ -20,10 +20,8 @@ tailwind.config={
                     from:{transform:'translateX(0)'},
                     to:{transform:'translateX(-100%)'},
                 },
-                'scaleimg':{
-                    from:{transform:"scale(2)",opacity:'0'},
-                    to:{transform:'scale(1)', opacity:'1'}
-                }
+               
+              
                
             },
             colors:{

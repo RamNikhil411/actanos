@@ -1,10 +1,11 @@
 var test =new Swiper(".mySwiper",{
+  speed:1000,
     navigation:{
         nextEl:".next-button",
         prevEl:".prev-button"
     },
     autoplay:{
-      delay:3000,
+      delay:5000,
       disableOnInteraction:false
   },
     

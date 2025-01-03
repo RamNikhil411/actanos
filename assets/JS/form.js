@@ -84,6 +84,8 @@ if ($("#contactForm").length) {
                         email_subject: this.emailSubject,
                         success_response: this.successResponse,
                     };
+
+                    this.loader=true;
                     let response = await axios.post(this.apiUrl, data);
                     if (response.data.success) {
                         this.showSuccess = true;

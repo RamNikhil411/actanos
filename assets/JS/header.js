@@ -61,14 +61,14 @@ function scrollTracker() {
     const sectionTop = section.offsetTop - 80;
     const id = section.getAttribute("id");
     const currentNavLink = document.querySelector(`.navlinks a[href*="#${id}"]`);
-    const currentDiv =document.querySelector(`.navlinks a[href*="#${id}"] + div `)
+   
     if (
       currentYScroll > sectionTop &&
       currentYScroll <= sectionTop + sectionHeight
     ) {
        if(screen.width < 1024){
-        if(currentNavLink.classList.contains("web-active")){
-            currentNavLink.classList.remove("web-active")
+        if(currentNavLink.classList.add("bg-black","text-white")){
+            currentNavLink.classList.remove("bg-black","text-white")
             
         }
 
@@ -80,12 +80,10 @@ function scrollTracker() {
             currentNavLink.classList.remove("underline","decoration-blue-900","underline-offset-4")
 
         }
-        if(currentDiv.classList.contains("scale-x-0")){
-            currentDiv.classList.remove("scale-x-0")
-            
-        }
-        currentNavLink.classList.add("web-active")
-        currentDiv.classList.add("scale-x-100")
+
+     
+        currentNavLink.classList.add("bg-black","text-white")
+       
         
        }
     }
@@ -95,12 +93,9 @@ function scrollTracker() {
 
       }
       else{
-        if(currentDiv.classList.contains("scale-x-100")){
-            
-            currentDiv.classList.add("scale-x-0")
+        if(currentNavLink.classList.contains("bg-black","text-white")){
+        currentNavLink.classList.remove("bg-black","text-white");
         }
-        currentNavLink.classList.remove("web-active");
-        currentDiv.classList.remove("scale-x-100")
         
       
       }

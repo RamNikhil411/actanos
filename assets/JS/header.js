@@ -110,3 +110,11 @@ function scrollTracker() {
 }
 
 window.addEventListener("scroll", scrollTracker);
+
+const years = document.querySelectorAll(".year")
+    years.forEach(year =>{
+        year.textContent = new Date().getFullYear(); 
+
+    })
+
+

@@ -53,7 +53,7 @@ if ($("#contactForm").length) {
                     message: "",
                 },
                 ownerData: {
-                    email: "suraj.b@orotron.com, pavani.b@orotron.com", 
+                    email: "ramnikhil431@gmail.com, ramnikhil312@gmail.com", 
                     name: "Actanos",
                 },
                 formData: {
@@ -89,9 +89,7 @@ if ($("#contactForm").length) {
                         this.showSuccess = true;
                         this.showError = false;
                         this.loader = false;
-                        setTimeout(function () {
-                            $("#suceess-message").css("opacity", "0");
-                        }, 7000);
+                       
                         this.loader = false;
                         this.leadData.name = "";
                         this.leadData.email = "";

@@ -61,14 +61,16 @@ function scrollTracker() {
     const sectionTop = section.offsetTop - 80;
     const id = section.getAttribute("id");
     const currentNavLink = document.querySelector(`.navlinks a[href*="#${id}"]`);
+    const path = document.querySelector(`.navlinks a[href*="#${id}"] path`)
    
     if (
       currentYScroll > sectionTop &&
       currentYScroll <= sectionTop + sectionHeight
     ) {
        if(screen.width < 1024){
-        if(currentNavLink.classList.add("bg-black","text-white")){
-            currentNavLink.classList.remove("bg-black","text-white")
+        if(currentNavLink.classList.contains("bg-black","text-white")){
+            currentNavLink.classList.remove("bg-black","text-white");
+            path.classList.remove("fill-white")
             
         }
 
@@ -83,6 +85,7 @@ function scrollTracker() {
 
      
         currentNavLink.classList.add("bg-black","text-white")
+        path.classList.add("fill-white")
        
         
        }
@@ -95,6 +98,7 @@ function scrollTracker() {
       else{
         if(currentNavLink.classList.contains("bg-black","text-white")){
         currentNavLink.classList.remove("bg-black","text-white");
+        path.classList.remove("fill-white")
         }
         
       

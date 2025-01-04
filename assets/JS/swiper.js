@@ -4,6 +4,10 @@ var test =new Swiper(".mySwiper",{
         nextEl:".next-button",
         prevEl:".prev-button"
     },
+    effect:'fade',
+    fadeEffect: {
+      crossFade: true 
+    },
     autoplay:{
       delay:5000,
       disableOnInteraction:false
@@ -75,6 +79,9 @@ var test =new Swiper(".mySwiper",{
       type:"fraction"
 
     },
+    keyboard: {
+      enabled: true,
+    },
     thumbs: {
       swiper: gallery_thumbs,
     },
@@ -124,6 +131,9 @@ var test =new Swiper(".mySwiper",{
       el:".gallery-index",
       type:"fraction"
 
+    },
+    keyboard: {
+      enabled: true,
     },
   });
 

@@ -1,20 +1,17 @@
 
 
   if(screen.width < 1024){
-    const words = ["Design", "Transform", "Accelerate"];
-    
-const spinElement = document.getElementById("spin");
-let index = 0;
-
-// Function to rotate words
-function rotateText() {
-  spinElement.textContent = words[index];
-  
-  index = (index + 1) % words.length; // Loop to the start after the last word
-}
-
-// Rotate every 2 seconds
-setInterval(rotateText, 1000);
+    var typed = new Typed(".typed-words",{
+      strings:["Design","Transform","Accelerate"],
+      typedSpeed:100,
+      backSpeed:100,
+      backDelay:800,
+      startDelay:500,
+      loop:true,
+      showCursor:true,
+      cursorChar: "_",
+      attr:null,
+    })
   }
 
 
@@ -47,7 +44,7 @@ const cards = document.querySelectorAll(".card")
       cards,
       {
         opacity: [0, 1],
-        transform:["translateY(100%)","translate(0%)"],
+        transform:["translateY(50%)","translate(0%)"],
         
       },
       {
@@ -61,11 +58,11 @@ const cards = document.querySelectorAll(".card")
 
   })
 
-  const text = new SplitType('.text-split',{
+  const text = new SplitType('.about-content',{
     types:'words , chars , lines',
     tagName:"span"
-
   })
+
 
   const lines = document.querySelectorAll(" .about-content .line")
   lines.forEach((line,index)=>{
@@ -149,27 +146,28 @@ const cards = document.querySelectorAll(".card")
     return ()=> animate(target, { opacity: 0, transform:"translatex(-100%)" })
   })
 
-  const service_content = document.querySelectorAll(".services-content .char")
+  const service_content = document.querySelectorAll(".services-content")
 
-  service_content.forEach((char,index)=>{
-    inView(char,({target})=>{
+  
+    inView(service_content,({target})=>{
       animate(
         target,
         {
           opacity:[0,1],
+          transform:["translateX(100%)","translateX(0%)"]
       
         },
         {
-          duration:0.09,
+          duration:1.2,
           easing:"ease-out",
-          delay:index*0.004
+          delay:0.2
 
         }
         
       )
-      return ()=> animate(target,{opacity:0})
+      return ()=> animate(target,{opacity:0, transform:"translateX(0%)"})
     })
-  })
+  
 
   const slide_up = document.querySelectorAll(".slide-up")
 slide_up.forEach((slide,index)=>{
@@ -181,9 +179,9 @@ slide_up.forEach((slide,index)=>{
         transform:["translateY(100%)","translateY(0%)"]
       },
       {
-        duration:0.3,
+        duration:0.1,
         easing:"ease-out",
-        delay:index*0.3
+        delay:index*0.05
       }
     )
     return ()=> animate(target,{opacity:0})
@@ -208,6 +206,28 @@ stats.forEach((stat,index)=>{
     )
     return ()=> animate(target,{opacity:0,transform:"translateY(100%)"})
   })
+})
+
+const drive_content = document.querySelectorAll(".drive-content")
+
+  
+inView(drive_content,({target})=>{
+  animate(
+    target,
+    {
+      opacity:[0,1],
+      transform:["translateX(-100%)","translateX(0%)"]
+  
+    },
+    {
+      duration:1.2,
+      easing:"ease-out",
+      delay:0.2
+
+    }
+    
+  )
+  return ()=> animate(target,{opacity:0, transform:"translateX(-100%)"})
 })
 
 const brings =  document.querySelectorAll(".bring")

@@ -142,24 +142,24 @@
                 class="absolute z-[-1] object-contain   object-center h-full md:h-auto object-center  md:hidden"></object>   
         </div>
         <div class=" px-3 md:px-8 lg:px-10 xl:px-12 3xl:px-32 ">
-            <div class="py-3 my-20 lg:my-24 lg:py-24 md:py-48  xl:py-36 2xl:py-10 3xl:py-16">
+            <div class="py-3 mt-20 lg:mt-24 lg:pt-24 md:pt-48  xl:pt-36 2xl:pt-10 3xl:pt-16">
                 <div class="font-dm_sans font-light overflow-hidden text-5xl md:text-[90px] 3xl:text-[200px] xl:text-7xl 1920:text-8xl lg:text-7xl text-center leading-none ">
                     <div class="hidden md:block  ">
                    <div class="hero h-fit  overflow-hidden">Design</div>
                    <div class="hero h-fit  overflow-hidden">Transform</div>
                    <div class="hero h-fit  overflow-hidden">Accelerate</div>
                     </div>
-                    <div class="text-center flex justify-center items-end ">
-                    <div class="md:hidden text-2xl  inline  ">We </div>
-                    <div class="relative flex justify-start w-44 overflow-hidden">
-                    <div id="spin" class="word text-4xl md:hidden  inline px-2"></div>
-                    
+
+                    <div class="container flex items-center justify-center md:hidden">
+                        <p class="text-xl">We <span class="typed-words text-4xl"> </span>
+                        </p>
+
                     </div>
-                
-                  </div>
+                  
             </div>
             <!--web version-->
-            <section class="hidden md:block pt-32 3xl:pt-40 " id="Casestudy">
+            <section id="Casestudy" class="pt-10">
+            <div class="hidden md:block pt-32 3xl:pt-40 web">
                 <div class="grid grid-cols-4 px-2 gap-4">
                     <a href="caseStudies/eruvaka.html"
                         class=" bg-white border  rounded-2xl card  hover:!translate-y-[-10px] transition-all duration-500 p-0.5 card">
@@ -299,9 +299,9 @@
                     </a>
 
                 </div>
-            </section>
+            </div>
             <!--mobile-->
-            <section  class="flex  flex-col items-center justify-center md:hidden overflow-hidden cards mt-6">
+            <div  class="flex mobile  flex-col items-center justify-center md:hidden overflow-hidden cards mt-6 pt-10">
                 <div class="swiper myCards w-[85%] h-[520px]">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide flex justify-center rounded-lg w-full h-full shadow-lg">
@@ -452,6 +452,7 @@
                 <div>
                     <div class="card-index justify-self-center items-center"></div>
                 </div>
+            </div>
             </section>
 
 
@@ -464,7 +465,9 @@
                 <div
                     class="font-dm_sans   text-5xl 2xl:text-6xl xl:text-5xl    lg:text-3xl 3xl:text-9xl text-4-color  lg:px-20  text-center lg:text-left about-content text-split">
                     We Act <br>
+                    <br>
                     We Build <br>
+                    <br>
                     We Deliver. <br>
                 </div>
                 <div class="hidden lg:block">
@@ -494,7 +497,7 @@
         </div>
 
     </section>
-    <section id="services" class="pt-40 pb-20  3xl:pt-40 overflow-hidden">
+    <section id="services" class="pt-20 xl:pt-40  xl:pb-20  3xl:pt-40 overflow-hidden">
         <div class=" px-3 md:px-8 lg:px-10 xl:px-12 3xl:px-32 space-y-6 relative lg:space-y-8 xl:space-y-14  ">
 
 
@@ -502,7 +505,7 @@
                 <div class="font-dm_sans font-light text-4xl 2xl:text-6xl lg:text-5xl  3xl:text-9xl services">
                     Services
                 </div>
-                <div class="font-dm_sans font-light text-base lg:text-base 2xl:text-xl 3xl:text-3xl text-5-color services-content text-split">
+                <div class="font-dm_sans font-light text-base lg:text-base xl:text-lg 1920:text-xl 3xl:text-3xl text-5-color services-content text-split">
                     At Actanos, we endlessly pursue innovation and enhancement. Our passion <br class="hidden lg:block">
                     for Engineering and coding drives
                     us to evolve perpetually, staying ahead in the<br class="hidden lg:block"> digital world and
@@ -564,7 +567,7 @@
         </div>
     </section>
 
-    <section class=" overflow-hidden mt-10 ">
+    <section class=" overflow-hidden mt-10  hidden md:block ">
         <div class="px-3 md:px-6 lg:px-10 xl:px-12 3xl:px-32 lg:space-y-8 xl:space-y-14 space-y-6">
 
 
@@ -592,7 +595,7 @@
     </section>
 
 
-    <section class="mt-20  overflow-hidden">
+    <section class="mt-10 lg:mt-20  overflow-hidden">
         <div>
             <div class="px-3 md:px-6 lg:px-10 xl:px-12 3xl:px-32">
                 <div class="lg:flex lg:justify-between lg:items-center border-b pb-3">
@@ -611,7 +614,7 @@
                 </div>
                 <div class="grid lg:grid-cols-[55%_45%] lg:gap-20 lg:mt-4"> <!--grid-->
                     <div class="lg:space-y-8">
-                        <p class=" text-5-color font-dm_sans w-full py-2 font-light  2xl:text-xl 3xl:text-3xl services-content text-split">
+                        <p class=" text-5-color font-dm_sans w-full py-2 font-light  2xl:text-xl 3xl:text-3xl drive-content text-split">
                             At Actanos, our passionate team drives us forward with their enthusiasm for their work.
                             Creativity and collaboration are the heartbeat of our culture. We know a vibrant and
                             supportive environment is the key to achieving outstanding results.
@@ -876,7 +879,7 @@
                                         approach.
                                     </div>
                                 </div>
-                                <div class="flex items-end justify-between border-t py-3 md:px-4 lg:px-0 lg:ml-14 pt-5">
+                                <div class="flex items-center lg:items-end justify-between border-t py-3 md:px-4 lg:px-0 lg:ml-14 lg:pt-5">
                                     <div class=" flex items-start gap-3">
                                         <div>
                                             <img src="assets/images/testimonalLogos/Salestable.webp" alt=""
@@ -940,7 +943,7 @@
                                         detail.
                                     </div>
                                 </div>
-                                <div class="flex items-end justify-between border-t py-3 md:px-4 lg:px-0 lg:ml-14 pt-5">
+                                <div class="flex items-center lg:items-end justify-between border-t py-3 md:px-4 lg:px-0 lg:ml-14 lg:pt-5">
                                     <div class=" flex items-start  gap-3">
                                         <div>
                                             <img src="assets/images/testimonalLogos/product10x .webp" alt=""
@@ -1079,7 +1082,7 @@
         </div>
         </div>
     </footer>
-   
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
     <script src="assets/JS/animations.js"></script>

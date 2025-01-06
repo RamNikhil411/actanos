@@ -12,7 +12,7 @@ tailwind.config={
         extend:{
             animation:{
                 'loop-scroll':'loop-scroll 25s linear infinite',
-                'scaleimg':'scaleimg 1s linear 1'
+                "blink": 'blink 2s infinite',
                 
             },
             keyframes:{
@@ -20,6 +20,11 @@ tailwind.config={
                     from:{transform:'translateX(0)'},
                     to:{transform:'translateX(-100%)'},
                 },
+                blink: {
+                    '0%, 49%': { backgroundColor: '#000000' },
+                    '50%, 99%': { backgroundColor: 'transparent' },
+                    '100%': { backgroundColor: '#000000' },
+                  },
                
               
                

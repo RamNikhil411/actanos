@@ -47,10 +47,14 @@ var test =new Swiper(".mySwiper",{
     }
   })
 ///mobile
-  var cards = new Swiper(".myCards", {
+  var card = new Swiper(".myCards", {
     effect: "cards",
     grabCursor: true,
     slideShadows:false,
+    cardsEffect:{
+      perSlideRotate:1,
+      perSlideOffset:6
+    },
     
     pagination:{
         el:".card-index",
@@ -106,6 +110,8 @@ var test =new Swiper(".mySwiper",{
      document.body.style.overflow="none"
  
   })
+
+
 
 
 

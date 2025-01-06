@@ -1,22 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-gsap.fromTo(".case-img", {
-
-
-    scale: 0.5
-}, {
-    
-    scale: 1,
-    stagger:0.3,
-    scrollTrigger: {
-        trigger: ".case-img",
-        start: "top 90%",
-        end: "bottom center",
-        scrub: true,
-        toggleActions: "play complete restart none"
-    }
-})
 
 window.addEventListener("DOMContentLoaded", (event) => {
     let text = new SplitType(".latest , .case-head1 ,.case-head2,.case-head3, .case-content , .challenge", {

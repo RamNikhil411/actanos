@@ -71,35 +71,62 @@ function scrollTracker() {
         if(currentNavLink.classList.contains("bg-black","text-white")){
             currentNavLink.classList.remove("bg-black","text-white");
             path.classList.remove("fill-white")
+            currentNavLink.classList.add("underline","decoration-blue-900","underline-offset-4")
             
+        }
+        else{
+            currentNavLink.classList.add("underline","decoration-blue-900","underline-offset-4")
         }
 
         
-        currentNavLink.classList.add("underline","decoration-blue-900","underline-offset-4")
+        
        }
        else{
         if(currentNavLink.classList.contains("underline","decoration-blue-900","underline-offset-4")){
             currentNavLink.classList.remove("underline","decoration-blue-900","underline-offset-4")
+            currentNavLink.classList.add("bg-black","text-white")
+            path.classList.add("fill-white")
 
         }
 
-     
+       else{
         currentNavLink.classList.add("bg-black","text-white")
         path.classList.add("fill-white")
+
+       }
+       
        
         
        }
     }
     else {
       if(screen.width < 1024){
-        currentNavLink.classList.remove("underline","decoration-blue-900","underline-offset-4")
+        if(currentNavLink.classList.contains("bg-black","text-white")){
+            currentNavLink.classList.remove("bg-black","text-white");
+            path.classList.remove("fill-white")
+            currentNavLink.classList.remove("underline","decoration-blue-900","underline-offset-4")
+            
+        }
+        else{
+            currentNavLink.classList.remove("underline","decoration-blue-900","underline-offset-4")
+        }
+        
+        
 
       }
       else{
-        if(currentNavLink.classList.contains("bg-black","text-white")){
-        currentNavLink.classList.remove("bg-black","text-white");
-        path.classList.remove("fill-white")
+        if(currentNavLink.classList.contains("underline","decoration-blue-900","underline-offset-4")){
+            currentNavLink.classList.remove("underline","decoration-blue-900","underline-offset-4")
+            currentNavLink.classList.remove("bg-black","text-white");
+            path.classList.remove("fill-white")
+
         }
+        else{
+            currentNavLink.classList.remove("bg-black","text-white");
+            path.classList.remove("fill-white")
+        }
+       
+        
         
       
       }

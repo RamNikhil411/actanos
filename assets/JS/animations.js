@@ -3,10 +3,10 @@
   if(screen.width < 1024){
     var typed = new Typed(".typed-words",{
       strings:["Design","Transform","Accelerate"],
-      typedSpeed:150,
-      backSpeed:100,
-      backDelay:100,
-      startDelay:2000,
+      typeSpeed: 50,
+      loop: true,
+      backDelay: 900,
+      backSpeed: 30,
       loop:true,
       showCursor:true,
       cursorChar: "_",

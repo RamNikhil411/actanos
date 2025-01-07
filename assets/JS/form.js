@@ -61,7 +61,7 @@ if ($("#contactForm").length) {
                     website_title: "Actanos",
                     website_url: "https://actanos.vercel.app",
                 },
-                emailSubject: "New Project",
+                emailSubject: "Lead from Actanos",
                 successResponse:
                     "Thank You, We will get back to you at the earliest",
                 errorResponse:

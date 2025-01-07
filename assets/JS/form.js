@@ -53,7 +53,7 @@ if ($("#contactForm").length) {
                     message: "",
                 },
                 ownerData: {
-                    email: "suraj.b@orotron.com, pavani.b@orotron.com", 
+                    email: "suraj.b@orotron.com, suresh@orotron.com", 
                     name: "Actanos",
                 },
                 formData: {

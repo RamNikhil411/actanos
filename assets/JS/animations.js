@@ -3,10 +3,10 @@
   if(screen.width < 1024){
     var typed = new Typed(".typed-words",{
       strings:["Design","Transform","Accelerate"],
-      typedSpeed:100,
+      typedSpeed:500,
       backSpeed:100,
-      backDelay:800,
-      startDelay:500,
+      backDelay:100,
+      startDelay:2000,
       loop:true,
       showCursor:true,
       cursorChar: "_",
@@ -48,9 +48,9 @@ const cards = document.querySelectorAll(".card")
         
       },
       {
-      duration : 0.6,
+      duration : 0.3,
       easing:"ease-out",
-      delay:stagger(0.6)
+      delay:stagger(0.3)
       }
 
     )
